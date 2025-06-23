@@ -6,46 +6,24 @@ import { twMerge } from "tailwind-merge";
 export const TechStack = () => {
   const stack = [
     {
-      title: "Next.js",
-      src: "/images/logos/next.png",
-
-      className: "h-10 w-14",
+      title: "Bệnh viện Chợ Rẫy",
+      src: "/images/logos/Cho_ray.png",
+      className: "h-20 w-20 scale-100", // để nguyên vì đã đẹp
     },
     {
-      title: "AWS",
-      src: "/images/logos/aws.webp",
-
-      className: "h-10 w-10",
+      title: "Đại học KHXH & NV Hà Nội",
+      src: "/images/logos/VNU.png",
+      className: "h-20 w-20 scale-150", // để nguyên
     },
     {
-      title: "Figma",
-      src: "/images/logos/figma.png",
-
-      className: "h-10 w-8",
+      title: "Du học SET",
+      src: "/images/logos/SET.png",
+      className: "h-20 w-20 scale-150", // scale lên 125% cho dễ đọc
     },
     {
-      title: "Framer Motion",
-      src: "/images/logos/framer.webp",
-
-      className: "h-10 w-10",
-    },
-    {
-      title: "Node",
-      src: "/images/logos/node.png",
-
-      className: "h-10 w-12",
-    },
-    {
-      title: "Tailwind",
-      src: "/images/logos/tailwind.png",
-
-      className: "h-10 w-24",
-    },
-    {
-      title: "Vercel",
-      src: "/images/logos/vercel.png",
-
-      className: "h-10 w-24",
+      title: "MLE",
+      src: "/images/logos/MLE.png",
+      className: "h-20 w-20 scale-125", // scale lớn nhất để rõ chữ
     },
   ];
   return (
@@ -56,16 +34,20 @@ export const TechStack = () => {
       >
         Tech Stack
       </Heading>
-      <div className="flex flex-wrap">
+            <div className="flex flex-wrap gap-6 justify-center items-center">
         {stack.map((item) => (
-          <Image
-            src={item.src}
+          <div
             key={item.src}
-            width={`200`}
-            height={`200`}
-            alt={item.title}
-            className={twMerge("object-contain mr-4 mb-4", item.className)}
-          />
+            className="w-32 h-28 overflow-hidden flex items-center justify-center bg-white rounded-md shadow"
+          >
+            <Image
+              src={item.src}
+              alt={item.title}
+              width={120}
+              height={120}
+              className={twMerge("object-contain", item.className)}
+            />
+          </div>
         ))}
       </div>
     </div>
