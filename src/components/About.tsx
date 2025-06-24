@@ -2,117 +2,64 @@
 import { Paragraph } from "@/components/Paragraph";
 import Image from "next/image";
 
-import { motion } from "framer-motion";
-
 export default function About() {
-  const images = [
-    "https://images.unsplash.com/photo-1692544350322-ac70cfd63614?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1692374227159-2d3592f274c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1692005561659-cdba32d1e4a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1692445381633-7999ebc03730?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-  ];
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-10">
-        {images.map((image, index) => (
-          <motion.div
-            key={image}
-            initial={{
-              opacity: 0,
-              y: -50,
-              rotate: 0,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              rotate: index % 2 === 0 ? 3 : -3,
-            }}
-            transition={{ duration: 0.2, delay: index * 0.1 }}
-          >
-            <Image
-              src={image}
-              width={200}
-              height={400}
-              alt="about"
-              className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-            />
-          </motion.div>
-        ))}
-        {/* 
-        // <Image
-        //   src="https://images.unsplash.com/photo-1692544350322-ac70cfd63614?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60"
-        //   width={200}
-        //   height={400}
-        //   alt="about"
-        //   className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-        // />
-        // <Image
-        //   src="https://images.unsplash.com/photo-1692374227159-2d3592f274c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60"
-        //   width={200}
-        //   height={400}
-        //   alt="about"
-        //   className="rounded-md object-cover transform -rotate-3 shadow-xl block w-full h-40 md:h-60  hover:rotate-0 transition duration-200"
-        // />
-        // <Image
-        //   src="https://images.unsplash.com/photo-1692005561659-cdba32d1e4a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-        //   width={200}
-        //   height={400}
-        //   alt="about"
-        //   className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60  hover:rotate-0 transition duration-200"
-        // />
-        // <Image
-        //   src="https://images.unsplash.com/photo-1692445381633-7999ebc03730?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-        //   width={200}
-        //   height={400}
-        //   alt="about"
-        //   className="rounded-md object-cover transform -rotate-3 shadow-xl block w-full h-40 md:h-60  hover:rotate-0 transition duration-200"
-        // /> */}
+      {/* Hero Section */}
+      <div className="w-full flex justify-center mb-12">
+        <Image
+          src="/images/sidefolio-aceternity.png"
+          alt="Hero"
+          width={900}
+          height={350}
+          className="rounded-xl object-cover w-full max-w-4xl h-64 md:h-80"
+        />
       </div>
 
-      <div className="max-w-4xl">
-        <Paragraph className=" mt-4">
-          Hey there, I&apos;m John Doe - a passionate developer, avid writer,
-          and a connoisseur of awesome design. Welcome to my corner of the
-          digital world!
+      {/* Section Text */}
+      <div className="max-w-3xl mx-auto mb-12 text-center">
+        <h2 className="text-3xl font-bold mb-4">Về AIFicent</h2>
+        <Paragraph className="text-justify">
+        Trong bối cảnh các doanh nghiệp đang tăng tốc chuyển đổi số và tìm kiếm giải pháp tối ưu hóa hoạt động dựa trên dữ liệu, AIFicent ra đời với mục tiêu mang trí tuệ nhân tạo (AI) đến gần hơn với thực tiễn kinh doanh.
         </Paragraph>
-        <Paragraph className=" mt-4">
-          Since the early days of my journey, I&apos;ve been captivated by the
-          art of crafting exceptional digital experiences. As a developer, I
-          thrive on turning lines of code into functional and elegant solutions.
-          My goal is to not just create software, but to build digital marvels
-          that seamlessly merge form and function.
-        </Paragraph>
+      </div>
 
-        <Paragraph className=" mt-4">
-          But my journey doesn&apos;t stop at coding. With a heart full of words
-          and a mind brimming with ideas, I&apos;ve ventured into the realm of
-          writing. From tech articles that unravel complex concepts to creative
-          tales that ignite the imagination, I weave words to inform, entertain,
-          and inspire.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          What sets me apart is my unwavering appreciation for design. I believe
-          that aesthetics and usability go hand in hand. My eye for awesome
-          design ensures that every project I undertake not only works
-          flawlessly under the hood but also looks stunning on the surface.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Through this website, I aim to share my insights, experiences, and
-          creations with you. Whether you&apos;re a fellow developer seeking
-          solutions, a fellow writer in search of inspiration, or simply someone
-          who appreciates the finer aspects of design, there&apos;s something
-          here for you.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Join me on this journey of bytes and narratives, logic and creativity,
-          code and prose. Together, we can explore the boundless possibilities
-          of technology and storytelling, all while reveling in the sheer beauty
-          of thoughtful design.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Thank you for being here, and I can&apos;t wait to embark on this
-          adventure with you.
-        </Paragraph>
+      {/* Section Text | Ảnh (text trái, ảnh phải) */}
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+        <div className="flex-1">
+          <h3 className="text-xl font-semibold mb-2">Giải pháp công nghệ linh hoạt, hiệu quả cao</h3>
+          <Paragraph>
+          AIFicent cung cấp giải pháp công nghệ linh hoạt, giúp doanh nghiệp tối ưu vận hành, nâng cao trải nghiệm khách hàng và ra quyết định chính xác nhờ dữ liệu. Mỗi sản phẩm được thiết kế từ hiểu biết sâu sắc về bài toán thực tiễn, đảm bảo tính ứng dụng cao và bền vững.
+          </Paragraph>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <Image
+            src="/images/sidefolio-algochurn-2.png"
+            alt="Mission"
+            width={420}
+            height={300}
+            className="rounded-lg object-cover w-[420px] h-[300px]"
+          />
+        </div>
+      </div>
+
+      {/* Section Ảnh | Text (ảnh trái, text phải) */}
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+        <div className="flex-1 flex justify-center order-2 md:order-1">
+          <Image
+            src="/images/sidefolio-algochurn-2.png"
+            alt="Vision"
+            width={420}
+            height={300}
+            className="rounded-lg object-cover w-[420px] h-[300px]"
+          />
+        </div>
+        <div className="flex-1 order-1 md:order-2">
+          <h3 className="text-xl font-semibold mb-2"> Đồng hành cùng doanh nghiệp trong kỷ nguyên số</h3>
+          <Paragraph>
+          Chúng tôi cam kết mang đến giải pháp chất lượng, dễ tích hợp, chi phí hợp lý – phù hợp với mọi quy mô doanh nghiệp. AIFicent không chỉ cung cấp công nghệ, mà còn đồng hành khai thác giá trị từ dữ liệu và AI để doanh nghiệp phát triển bền vững trong kỷ nguyên số.
+          </Paragraph>
+        </div>
       </div>
     </div>
   );

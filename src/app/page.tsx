@@ -33,7 +33,7 @@ export default function Home() {
         as="h2"
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
       >
-        What I&apos;ve been working on
+        Our Products
       </Heading>
       <Products />
       <TechStack />

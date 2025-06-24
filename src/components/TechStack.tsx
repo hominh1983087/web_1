@@ -32,7 +32,7 @@ export const TechStack = () => {
         as="h2"
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
       >
-        Tech Stack
+        Our clients
       </Heading>
             <div className="flex flex-wrap gap-6 justify-center items-center">
         {stack.map((item) => (
