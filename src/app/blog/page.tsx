@@ -20,10 +20,9 @@ export default async function Blog() {
   return (
     <Container>
       <span className="text-4xl">📝</span>
-      <Heading className="font-black pb-4">I write about technology</Heading>
+      <Heading className="font-black pb-4">Góc nhìn của AIFicent về Lĩnh Vực</Heading>
       <Paragraph className="pb-10">
-        Ever since <Highlight> I was a kid</Highlight>, I&apos;ve been
-        fascinated by technology.
+      Các <Highlight>trích dẫn</Highlight>, <Highlight>nhận định</Highlight> và <Highlight>chia sẻ</Highlight> từ đồng sáng lập AIFicent và các <Highlight>chuyên gia trong ngành</Highlight> – về <Highlight>xu hướng</Highlight>, <Highlight>công nghệ</Highlight> và hành trình <Highlight>đổi mới</Highlight>.
       </Paragraph>
       <Blogs blogs={data} />
     </Container>
