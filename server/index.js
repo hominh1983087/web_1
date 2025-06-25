@@ -30,9 +30,9 @@ db.connect((err) => {
 });
 
 app.post("/contact", (req, res) => {
-  let { name, email, message } = req.body;
+  let { name, email, phone, message } = req.body;
   // Validate
-  if (!name || !email || !message) {
+  if (!name || !email || !phone || !message) {
     return res.status(400).json({ error: "Vui lòng nhập đầy đủ thông tin." });
   }
   if (!validator.isLength(name, { min: 2, max: 100 })) {
@@ -41,25 +41,41 @@ app.post("/contact", (req, res) => {
   if (!validator.isEmail(email)) {
     return res.status(400).json({ error: "Email không hợp lệ." });
   }
+  if (!validator.isMobilePhone(phone, "vi-VN")) {
+    return res.status(400).json({ error: "Số điện thoại không hợp lệ." });
+  }
   if (!validator.isLength(message, { min: 5, max: 2000 })) {
     return res.status(400).json({ error: "Nội dung phải từ 5-2000 ký tự." });
   }
   // Sanitize
   name = xss(validator.escape(name));
   email = xss(validator.normalizeEmail(email));
+  phone = xss(validator.escape(phone));
   message = xss(validator.escape(message));
-  const createdAt = new Date();
-  const sql =
-    "INSERT INTO contact (name, email, message, createdAt) VALUES (?, ?, ?, ?)";
-  db.query(sql, [name, email, message, createdAt], (err, result) => {
+  // Check unique phone
+  db.query("SELECT id FROM contact WHERE phone = ?", [phone], (err, rows) => {
     if (err) {
-      console.error("Lỗi khi lưu vào MySQL:", err);
       return res
         .status(500)
-        .json({ error: "Lỗi server, không lưu được liên hệ." });
+        .json({ error: "Lỗi server khi kiểm tra số điện thoại." });
     }
-    res.json({ success: true, message: "Gửi liên hệ thành công!" });
-    console.log("Gửi liên hệ thành công!");
+    if (rows.length > 0) {
+      return res
+        .status(400)
+        .json({ error: "Số điện thoại này đã được sử dụng." });
+    }
+    const createdAt = new Date();
+    const sql =
+      "INSERT INTO contact (name, email, phone, message, createdAt) VALUES (?, ?, ?, ?, ?)";
+    db.query(sql, [name, email, phone, message, createdAt], (err, result) => {
+      if (err) {
+        console.error("Lỗi khi lưu vào MySQL:", err);
+        return res
+          .status(500)
+          .json({ error: "Lỗi server, không lưu được liên hệ." });
+      }
+      res.json({ success: true, message: "Gửi liên hệ thành công!" });
+    });
   });
 });
 

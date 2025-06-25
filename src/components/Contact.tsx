@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import { IconCircleCheck, IconCircleX } from "@tabler/icons-react";
+import toast from "react-hot-toast";
+import CustomToast from "./CustomToast";
 
 const defaultFormState = {
   name: {
@@ -10,6 +13,10 @@ const defaultFormState = {
     value: "",
     error: "",
   },
+  phone: {
+    value: "",
+    error: "",
+  },
   message: {
     value: "",
     error: "",
@@ -17,12 +24,10 @@ const defaultFormState = {
 };
 export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
-  const [status, setStatus] = useState("");
 
   //backend
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    setStatus("");
     try {
       const res = await fetch("http://localhost:5000/contact", {
         method: "POST",
@@ -30,18 +35,43 @@ export const Contact = () => {
         body: JSON.stringify({
           name: formData.name.value,
           email: formData.email.value,
+          phone: formData.phone.value,
           message: formData.message.value,
         }),
       });
       const data = await res.json();
       if (res.ok) {
-        setStatus("Gửi liên hệ thành công!");
+        toast.custom((t) => (
+          <CustomToast
+            t={t}
+            message="Gửi liên hệ thành công!"
+            type="success"
+            duration={4000}
+            onClose={() => toast.dismiss(t.id)}
+          />
+        ));
         setFormData(defaultFormState);
       } else {
-        setStatus(data.error || "Có lỗi xảy ra, vui lòng thử lại.");
+        toast.custom((t) => (
+          <CustomToast
+            t={t}
+            message={data.error || "Có lỗi xảy ra, vui lòng thử lại."}
+            type="error"
+            duration={4000}
+            onClose={() => toast.dismiss(t.id)}
+          />
+        ));
       }
     } catch (err) {
-      setStatus("Không thể kết nối máy chủ, vui lòng thử lại sau.");
+      toast.custom((t) => (
+        <CustomToast
+          t={t}
+          message="Không thể kết nối máy chủ, vui lòng thử lại sau."
+          type="error"
+          duration={4000}
+          onClose={() => toast.dismiss(t.id)}
+        />
+      ));
     }
   };
 
@@ -58,6 +88,21 @@ export const Contact = () => {
             setFormData({
               ...formData,
               name: {
+                value: e.target.value,
+                error: "",
+              },
+            });
+          }}
+        />
+        <input
+          type="tel"
+          placeholder="Your phone number"
+          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+          value={formData.phone.value}
+          onChange={(e) => {
+            setFormData({
+              ...formData,
+              phone: {
                 value: e.target.value,
                 error: "",
               },
