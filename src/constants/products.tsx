@@ -1,8 +1,8 @@
 import sidefolioAceternity from "public/images/product1.jpg";
 import sidefolioAceternity2 from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAlgochurn from "public/images/sidefolio-algochurn.png";
+import sidefolioAlgochurn from "public/images/product2.jpg";
 import sidefolioAlgochurn2 from "public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
+import sidefolioMoonbeam from "public/images/product3.jpg";
 import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
 import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
 import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
@@ -15,7 +15,7 @@ export const products = [
       "Giải pháp trợ lý ảo giúp doanh nghiệp nâng cao hiệu suất làm việc, tối ưu quản lý tri thức nội bộ và hỗ trợ khách hàng 24/7 với chi phí vận hành thấp.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["Nextjs", "Tailwindcss"],
+    stack: ["AI agent", "Chatbot"],
     slug: "aceternity",
     content: (
       <div>
@@ -155,61 +155,158 @@ export const products = [
   },
   {
     href: "/contact",
-    title: "Algochurn",
+    title: "Công cụ phân tích dữ liệu và dự báo",
     description:
-      "Practice for technical interviews with hands on coding challenges.",
+      "Ứng dụng phân tích dữ liệu giúp doanh nghiệp ra quyết định chính xác, tối ưu vận hành, tăng lợi nhuận và nắm bắt cơ hội thị trường hiệu quả.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "algochurn",
+    stack: ["AI Agent", "Công cụ AI"],
+    slug: "tools",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <h3>2.1 Ra quyết định dựa trên dữ liệu</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Thay thế cảm tính bằng phân tích khách quan</li>
+          <li>
+            Giảm thiểu rủi ro trong quá trình ra quyết định kinh doanh. Dự báo
+            xu hướng thị trường
+          </li>
+          <li>Nhận diện xu hướng tiêu dùng trước khi chúng trở nên phổ biến</li>
+          <li>Điều chỉnh chiến lược kinh doanh kịp thời để nắm bắt cơ hội</li>
+        </ul>
+        <h3>2.2 Quản lý tồn kho tối ưu</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>
+            Dự báo nhu cầu chính xác để tránh tình trạng thừa hoặc thiếu hàng
+          </li>
+          <li>Giảm chi phí lưu kho và tối ưu vốn lưu động</li>
+        </ul>
+        <h3>2.3 Phân khúc khách hàng hiệu quả</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Nhận diện các nhóm khách hàng có giá trị cao nhất</li>
+          <li>Điều chỉnh chiến lược marketing phù hợp với từng phân khúc</li>
+        </ul>
+        <h3>2.4 Tối ưu hóa giá bán</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Phân tích độ nhạy cảm về giá của khách hàng</li>
+          <li>Đề xuất cấu trúc giá tối ưu để tăng doanh thu và lợi nhuận</li>
+        </ul>
+        <h3>2.5 Phát hiện gian lận và bất thường</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Tự động phát hiện các giao dịch đáng ngờ</li>
+          <li>Bảo vệ doanh nghiệp khỏi các rủi ro tài chính</li>
+        </ul>
+        <h3>2.6 Tối ưu hiệu quả hoạt động</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Xác định các điểm nghẽn trong quy trình vận hành</li>
+          <li>Đề xuất giải pháp cải thiện dựa trên phân tích dữ liệu</li>
+        </ul>
+        <h3>2.7 Dự báo dòng tiền</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Mô hình hóa các kịch bản tài chính khác nhau</li>
+          <li>Chuẩn bị trước cho các thách thức về dòng tiền</li>
+        </ul>
+        <h3>2.8 Phân tích cạnh tranh</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Theo dõi và so sánh hoạt động với đối thủ</li>
+          <li>Xác định cơ hội thị trường chưa được khai thác</li>
+        </ul>
+        <h3>2.9 Đo lường hiệu quả marketing</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Phân tích ROI của các chiến dịch marketing</li>
+          <li>Phân bổ ngân sách marketing hiệu quả hơn</li>
+        </ul>{" "}
       </div>
     ),
   },
   {
     href: "/contact",
-    title: "Moonbeam",
+    title: "AI Agent, tự động hóa quy trình kinh doanh (RPA)",
     description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
+      "Tự động hóa giúp tăng hiệu suất, giảm chi phí và sai sót, đồng thời cải thiện trải nghiệm và mở rộng quy mô dễ dàng.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss"],
+    stack: ["AI agent", "Kinh doanh"],
     slug: "moonbeam",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <h3>Tự động hóa công việc lặp lại</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Thay thế các tác vụ thủ công, đơn điệu và tốn thời gian</li>
+          <li>
+            Giải phóng nhân viên để tập trung vào công việc sáng tạo và giá trị
+            cao
+          </li>
+        </ul>
+        <h3>Giảm thiểu lỗi con người</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Thực hiện các quy trình với độ chính xác cao và nhất quán</li>
+          <li>Loại bỏ sai sót do mệt mỏi hoặc thiếu tập trung</li>
+        </ul>
+        <h3>Tăng tốc độ xử lý công việc</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Hoàn thành các nhiệm vụ nhanh hơn nhiều lần so với con người</li>
+          <li>Vận hành 24/7 không cần nghỉ ngơi</li>
+        </ul>
+        <h3>Tiết kiệm chi phí vận hành</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Giảm chi phí nhân sự cho các công việc giá trị thấp</li>
+          <li>Tăng năng suất mà không cần tăng nhân lực</li>
+        </ul>
+        <h3>Tích hợp các hệ thống phân mảnh</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Kết nối các phần mềm và hệ thống không tương thích</li>
+          <li>Tạo quy trình làm việc xuyên suốt giữa các nền tảng</li>
+        </ul>
+        <h3>Cải thiện trải nghiệm khách hàng</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Phản hồi nhanh chóng các yêu cầu của khách hàng</li>
+          <li>Đảm bảo dịch vụ nhất quán và chuyên nghiệp</li>
+        </ul>
+        <h3>Phân tích quy trình và tối ưu hóa</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Thu thập dữ liệu về hiệu suất quy trình</li>
+          <li>Phát hiện điểm nghẽn và đề xuất cải tiến</li>
+        </ul>
+        <h3>Mở rộng quy mô dễ dàng</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>
+            Nhân rộng quy trình tự động mà không cần tăng chi phí tuyến tính
+          </li>
+          <li>Thích ứng nhanh với tăng trưởng kinh doanh</li>
+        </ul>
+        <h3>Tuân thủ quy định và báo cáo</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Đảm bảo tuân thủ các quy trình chuẩn</li>
+          <li>Tự động tạo báo cáo và lưu trữ hồ sơ</li>
+        </ul>
+        <h3>Nâng cao khả năng ra quyết định</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>Cung cấp dữ liệu chính xác và kịp thời cho quản lý</li>
+          <li>Phân tích xu hướng và đưa ra cảnh báo sớm</li>
+        </ul>
+        <h3>Các ứng dụng phổ biến trong doanh nghiệp vừa và nhỏ</h3>
+        <ul className="product-description" style={{ listStyleType: "circle" }}>
+          <li>
+            Tự động hóa nhập liệu và xử lý dữ liệu: Chuyển thông tin từ email,
+            PDF, Excel vào hệ thống
+          </li>
+          <li>
+            Xử lý hóa đơn và thanh toán: Tự động kiểm tra, phê duyệt và thanh
+            toán hóa đơn
+          </li>
+          <li>
+            Quy trình tuyển dụng: Sàng lọc hồ sơ, lên lịch phỏng vấn, gửi thông
+            báo
+          </li>
+          <li>
+            Quản lý đơn hàng: Từ tiếp nhận đến xử lý và theo dõi giao hàng
+          </li>
+          <li>
+            Báo cáo và phân tích: Tự động tạo báo cáo định kỳ và dashboard
+          </li>
+          <li>Quy trình mua hàng: Từ yêu cầu đến phê duyệt và đặt hàn</li>
+        </ul>{" "}
       </div>
     ),
   },
