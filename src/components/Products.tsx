@@ -23,7 +23,7 @@ export const Products = () => {
               opacity: 1,
               x: 0,
             }}
-            transition={{ duration: 0.2, delay: idx * 0.1 }}
+            transition={{ duration: 0.2, delay: idx * 0.3 }}
           >
             <Link
               href={product.slug ? `/projects/${product.slug}` : product.href}

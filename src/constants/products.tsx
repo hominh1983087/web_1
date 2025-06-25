@@ -18,28 +18,40 @@ export const products = [
     stack: ["AI agent", "Chatbot"],
     slug: "aceternity",
     content: (
-      <div>
-        <h2>1. Hệ thống chatbot / kho tri thức thông minh</h2>
-        <h3>1.1 Cho nhân viên công ty </h3>
-        <h4>Truy cập thông tin nhanh chóng và chính xác</h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold text-blue-900 mb-4">
+          1. Hệ thống chatbot / kho tri thức thông minh
+        </h2>
+        <h3 className="text-xl font-semibold text-blue-800 mt-6 mb-2">
+          1.1 Cho nhân viên công ty
+        </h3>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Truy cập thông tin nhanh chóng và chính xác
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>Tìm kiếm thông tin từ nhiều nguồn nội bộ chỉ trong vài giây</li>
           <li>
             Cung cấp câu trả lời chính xác từ tài liệu chính thức của công ty
           </li>
         </ul>
-        <h4>Đẩy nhanh quá trình đào tạo nhân viên mới </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Đẩy nhanh quá trình đào tạo nhân viên mới
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>Rút ngắn thời gian hòa nhập cho nhân viên mới</li>
           <li>Giảm gánh nặng đào tạo cho nhân viên cấp cao</li>
         </ul>
-        <h4>Duy trì kiến thức tổ chức </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Duy trì kiến thức tổ chức
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>Lưu giữ kinh nghiệm và kiến thức của nhân viên dày dạn</li>
           <li>Đảm bảo kiến thức không bị mất đi khi nhân sự nghỉ việc</li>
         </ul>
-        <h4>Tăng hiệu suất làm việc </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Tăng hiệu suất làm việc
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>
             Giảm thời gian tìm kiếm thông tin (trung bình 30% thời gian làm
             việc)
@@ -48,108 +60,124 @@ export const products = [
             Giảm gián đoạn công việc do phải chờ đợi phản hồi từ đồng nghiệp
           </li>
         </ul>
-        <h4>Chuẩn hóa quy trình và thông tin </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Chuẩn hóa quy trình và thông tin
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>Đảm bảo mọi người đều nhận được thông tin nhất quán</li>
           <li>Giảm sai sót do hiểu sai hoặc thiếu thông tin</li>
         </ul>
-        <h4>Hỗ trợ ra quyết định </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Hỗ trợ ra quyết định
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>
-            Cung cấp dữ liệu và thông tin cần thiết cho việc ra quyết định{" "}
+            Cung cấp dữ liệu và thông tin cần thiết cho việc ra quyết định
           </li>
           <li>
-            Truy xuất các tiền lệ và kinh nghiệm xử lý tình huống trong quá khứ{" "}
+            Truy xuất các tiền lệ và kinh nghiệm xử lý tình huống trong quá khứ
           </li>
         </ul>
-        <h4> </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li> </li>
-          <li> </li>
-        </ul>
-        <h4>Tối ưu hóa quản lý tri thức </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Tự động cập nhật kho tri thức từ các nguồn nội bộ </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Tối ưu hóa quản lý tri thức
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Tự động cập nhật kho tri thức từ các nguồn nội bộ</li>
           <li>
-            Phân tích các câu hỏi thường gặp để xác định khoảng trống kiến thức{" "}
+            Phân tích các câu hỏi thường gặp để xác định khoảng trống kiến thức
           </li>
         </ul>
-        <h4>Phá vỡ rào cản thông tin giữa các phòng ban </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Tạo điều kiện chia sẻ kiến thức xuyên phòng ban </li>
-          <li>Cải thiện hợp tác nội bộ qua việc tiếp cận thông tin chung </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Phá vỡ rào cản thông tin giữa các phòng ban
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Tạo điều kiện chia sẻ kiến thức xuyên phòng ban</li>
+          <li>Cải thiện hợp tác nội bộ qua việc tiếp cận thông tin chung</li>
         </ul>
-        <h4>Giảm áp lực cho đội ngũ IT và quản lý </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Giảm số lượng yêu cầu hỗ trợ thông tin cơ bản </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Giảm áp lực cho đội ngũ IT và quản lý
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Giảm số lượng yêu cầu hỗ trợ thông tin cơ bản</li>
           <li>
             Tự động hóa việc giải đáp các câu hỏi thường gặp về công nghệ, quy
-            trình{" "}
+            trình
           </li>
         </ul>
-        <h4> </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li> </li>
-          <li> </li>
-        </ul>
-        <h4>Đo lường và cải thiện hiệu suất làm việc </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Theo dõi các chủ đề được tìm kiếm nhiều nhất </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Đo lường và cải thiện hiệu suất làm việc
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Theo dõi các chủ đề được tìm kiếm nhiều nhất</li>
           <li>
-            Xác định các lĩnh vực cần đào tạo thêm hoặc cải thiện quy trình{" "}
+            Xác định các lĩnh vực cần đào tạo thêm hoặc cải thiện quy trình
           </li>
         </ul>
-        <h3>1.2 Cho khách hàng của công ty </h3>
-        <h4>Hỗ trợ khách hàng 24/7 </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Phản hồi tức thì mọi lúc, không bị giới hạn bởi giờ làm việc </li>
+        <h3 className="text-xl font-semibold text-blue-800 mt-6 mb-2">
+          1.2 Cho khách hàng của công ty
+        </h3>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Hỗ trợ khách hàng 24/7
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Phản hồi tức thì mọi lúc, không bị giới hạn bởi giờ làm việc</li>
           <li>
             Giải quyết các câu hỏi thường gặp ngay lập tức, không cần thời gian
-            chờ đợi{" "}
+            chờ đợi
           </li>
         </ul>
-        <h4>Tối ưu hóa nguồn lực nhân sự </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Tối ưu hóa nguồn lực nhân sự
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>
             Giảm tải công việc cho nhân viên CSKH, giúp họ tập trung vào các vấn
-            đề phức tạp{" "}
+            đề phức tạp
           </li>
-          <li>Tiết kiệm chi phí thuê nhân sự hỗ trợ khách hàng cơ bản </li>
+          <li>Tiết kiệm chi phí thuê nhân sự hỗ trợ khách hàng cơ bản</li>
         </ul>
-        <h4>Nâng cao trải nghiệm khách hàng </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Tương tác nhất quán và chuyên nghiệp </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Nâng cao trải nghiệm khách hàng
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Tương tác nhất quán và chuyên nghiệp</li>
           <li>
             Cá nhân hóa trải nghiệm dựa trên lịch sử giao dịch và hành vi khách
-            hàng{" "}
+            hàng
           </li>
         </ul>
-        <h4>Thu thập dữ liệu và phân tích xu hướng </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Thu thập dữ liệu và phân tích xu hướng
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
           <li>
             Hiểu rõ nhu cầu khách hàng thông qua phân tích các câu hỏi thường
-            gặp{" "}
+            gặp
           </li>
-          <li>Phát hiện các vấn đề lặp lại để cải thiện sản phẩm/dịch vụ </li>
+          <li>Phát hiện các vấn đề lặp lại để cải thiện sản phẩm/dịch vụ</li>
         </ul>
-        <h4>Tăng tỷ lệ chuyển đổi và bán hàng </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Tư vấn sản phẩm/dịch vụ phù hợp dựa trên nhu cầu khách hàng </li>
-          <li>Hỗ trợ quá trình mua hàng, giải đáp thắc mắc tức thời </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Tăng tỷ lệ chuyển đổi và bán hàng
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Tư vấn sản phẩm/dịch vụ phù hợp dựa trên nhu cầu khách hàng</li>
+          <li>Hỗ trợ quá trình mua hàng, giải đáp thắc mắc tức thời</li>
         </ul>
-        <h4>Tiết kiệm chi phí vận hành dài hạn </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Đầu tư một lần, sử dụng lâu dài với chi phí duy trì thấp </li>
-          <li>Mở rộng quy mô dễ dàng mà không cần tăng chi phí tuyến tính </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Tiết kiệm chi phí vận hành dài hạn
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Đầu tư một lần, sử dụng lâu dài với chi phí duy trì thấp</li>
+          <li>Mở rộng quy mô dễ dàng mà không cần tăng chi phí tuyến tính</li>
         </ul>
-        <h4>Đa dạng kênh tương tác </h4>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>
-            Tích hợp trên website, ứng dụng, mạng xã hội, Zalo, Messenger{" "}
-          </li>
-          <li>Tạo trải nghiệm nhất quán trên mọi kênh giao tiếp </li>
+        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
+          Đa dạng kênh tương tác
+        </h4>
+        <ul className="list-disc pl-6 text-gray-700 space-y-1">
+          <li>Tích hợp trên website, ứng dụng, mạng xã hội, Zalo, Messenger</li>
+          <li>Tạo trải nghiệm nhất quán trên mọi kênh giao tiếp</li>
         </ul>
-        <p> từ 2.990.000₫</p>{" "}
+        <p className="text-blue-900 font-bold mt-6">Từ 2.990.000₫</p>
       </div>
     ),
   },
