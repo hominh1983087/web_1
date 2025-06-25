@@ -32,7 +32,7 @@ export const Sidebar = () => {
               <Navigation setOpen={setOpen} />
             </div>
             <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/contact" text="Contact Us" />
+              <Badge href="/contact" text="Contact us" />
             </div>
           </motion.div>
         )}

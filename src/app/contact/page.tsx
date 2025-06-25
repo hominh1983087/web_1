@@ -8,19 +8,18 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Contact | John Doe",
+  title: "Contact | AIFICIENT",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "AIFICIENT là một công ty phát triển phần mềm và dịch vụ kỹ thuật số. Chúng tôi cung cấp các giải pháp phần mềm và dịch vụ kỹ thuật số cho các doanh nghiệp và cá nhân.",
 };
 
 export default function Projects() {
   return (
     <Container>
       <span className="text-4xl">✉️</span>
-      <Heading className="font-black mb-2">Contact Me</Heading>
+      <Heading className="font-black mb-2">Liên hệ với chúng tôi</Heading>
       <Paragraph className="mb-10 max-w-xl">
-        Reach out to me over email or fill up this contact form. I will get back
-        to you ASAP - I promise.{" "}
+      Hãy liên hệ với chúng tôi qua email hoặc điền form liên hệ. Chúng tôi sẽ sớm phản hồi bạn{" "}
       </Paragraph>
       <Contact />
     </Container>
