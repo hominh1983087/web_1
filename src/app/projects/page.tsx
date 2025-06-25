@@ -18,7 +18,7 @@ export default function Projects() {
       <span className="text-4xl">⚡</span>
       <Heading className="font-black mb-10">
         {" "}
-        Our Products
+        Sản phẩm/Dịch vụ
       </Heading>
 
       <Products />

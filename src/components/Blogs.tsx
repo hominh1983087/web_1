@@ -26,7 +26,9 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
         >
           <Link
             key={`blog-${blog.title}`}
-            href={`/blog/${blog.slug}`}
+            href={blog.externalUrl ? blog.externalUrl : `/blog/${blog.slug}`}
+            target={blog.externalUrl ? "_blank" : "_self"}
+            rel={blog.externalUrl ? "noopener noreferrer" : undefined}
             className="relative my-10 block"
             onMouseEnter={() => setHovered(blog.slug)}
             onMouseLeave={() => setHovered(null)}
