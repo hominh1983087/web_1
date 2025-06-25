@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeIn {
+@keyframes toast-slide-in {
   from {
+    transform: translateX(100%);
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
-    opacity: 1;
     transform: none;
+    opacity: 1;
   }
 }
-.animate-fade-in {
-  animation: fadeIn 1s ease;
+.animate-toast-slide-in {
+  animation: toast-slide-in 0.4s cubic-bezier(0.4, 2, 0.6, 1) both;
+}
+
+@keyframes toast-slide-out {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.animate-toast-slide-out {
+  animation: toast-slide-out 0.9s cubic-bezier(0.4, 2, 0.6, 1) both;
 }
