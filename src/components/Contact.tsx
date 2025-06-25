@@ -17,12 +17,35 @@ const defaultFormState = {
 };
 export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
+  const [status, setStatus] = useState("");
 
-  const handleSubmit = (e: any) => {
+  //backend
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // Write your submit logic here
-    console.log(formData);
+    setStatus("");
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name.value,
+          email: formData.email.value,
+          message: formData.message.value,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("Gửi liên hệ thành công!");
+        setFormData(defaultFormState);
+      } else {
+        setStatus(data.error || "Có lỗi xảy ra, vui lòng thử lại.");
+      }
+    } catch (err) {
+      setStatus("Không thể kết nối máy chủ, vui lòng thử lại sau.");
+    }
   };
+
+  //frontend
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="flex flex-col md:flex-row justify-between gap-5">

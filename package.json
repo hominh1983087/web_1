@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "node server/index.js"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
@@ -19,10 +20,13 @@
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "clsx": "^2.0.0",
+    "cors": "^2.8.5",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "express": "^5.1.0",
     "framer-motion": "^10.16.1",
     "keen-slider": "^6.8.6",
+    "mysql2": "^3.14.1",
     "next": "13.4.19",
     "postcss": "8.4.28",
     "prismjs": "^1.29.0",
@@ -31,6 +35,8 @@
     "remark-gfm": "^3.0.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "validator": "^13.15.15",
+    "xss": "^1.0.15"
   }
 }
