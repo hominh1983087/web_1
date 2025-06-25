@@ -25,7 +25,7 @@ export default function AboutPage() {
   return (
     <Container>
       <span className="text-4xl">💬</span>
-      <Heading className="font-black">About Us</Heading>
+      <Heading className="font-black">Giới thiệu</Heading>
       <About />
     </Container>
   );
