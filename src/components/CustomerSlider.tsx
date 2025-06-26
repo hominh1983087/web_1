@@ -69,7 +69,7 @@ export default function CustomerSlider() {
                 <p className="text-gray-500 text-sm">{cus.title}</p>
               </div>
             </div>
-            <p className="text-gray-700 flex-1">"{cus.quote}"</p>
+            <p className="text-gray-700 flex-1">&ldquo;{cus.quote}&rdquo;</p>
           </div>
         ))}
       </div>

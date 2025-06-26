@@ -157,10 +157,10 @@ export default function About() {
           <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
               <blockquote className="text-2xl md:text-xl italic text-gray-700 border-l-4 border-blue-500 pl-6">
-                "Mức sàn năng suất lao động đã thay đổi. Nếu như trước kia làm
-                việc năng suất gấp 2-3 lần, nhân sự sẽ được ghi nhận và khen
+                &ldquo;Mức sàn năng suất lao động đã thay đổi. Nếu như trước kia
+                làm việc năng suất gấp 2-3 lần, nhân sự sẽ được ghi nhận và khen
                 thưởng. Nhưng giờ đây, với sự hỗ trợ của AI, việc đạt mức năng
-                suất cao như vậy chỉ được xem là tiêu chuẩn."
+                suất cao như vậy chỉ được xem là tiêu chuẩn.&rdquo;
               </blockquote>
               <p className="mt-4 text-right font-bold text-blue-900 text-sm">
                 — Nguyễn Gia Hy, Co-Founder AIFicent
@@ -183,10 +183,10 @@ export default function About() {
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.05, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
         whileHover={{
-          scale: 1.03,
+          scale: 1.05,
           boxShadow: "0 8px 32px 0 rgba(31,38,135,0.37)",
           backgroundColor: "rgba(255,255,255,0.25)",
         }}
