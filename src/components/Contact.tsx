@@ -134,7 +134,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Tên của bạn"
-              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              className="bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 px-2 py-2 rounded-md text-sm text-neutral-700 w-full border border-neutral-300"
               value={formData.name.value}
               onChange={(e) => {
                 setFormData({
@@ -154,7 +154,7 @@ export const Contact = () => {
             <input
               type="tel"
               placeholder="Số điện thoại"
-              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              className="bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 px-2 py-2 rounded-md text-sm text-neutral-700 w-full border border-neutral-300"
               value={formData.phone.value}
               onChange={(e) => {
                 setFormData({
@@ -176,7 +176,7 @@ export const Contact = () => {
             <input
               type="email"
               placeholder="Địa chỉ Email"
-              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              className="bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 px-2 py-2 rounded-md text-sm text-neutral-700 w-full border border-neutral-300"
               value={formData.email.value}
               onChange={(e) => {
                 setFormData({
@@ -199,7 +199,7 @@ export const Contact = () => {
           <textarea
             placeholder="Ghi chú"
             rows={10}
-            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
+            className="bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full border border-neutral-300"
             value={formData.message.value}
             onChange={(e) => {
               setFormData({
@@ -218,10 +218,10 @@ export const Contact = () => {
           )}
         </div>
         <button
-          className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500"
+          className="w-full px-2 py-2 mt-4 bg-white rounded-md font-bold text-neutral-500 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-neutral-400"
           type="submit"
         >
-          Submit
+          Gửi
         </button>
       </form>
       <motion.section
@@ -238,11 +238,14 @@ export const Contact = () => {
         </div>
         <div className="flex items-center gap-2 mb-2">
           <IconBuilding size={20} className="text-purple-500" />
-          <span className="font-semibold">AIFicient</span>
+          <span className="font-semibold">
+            AIFICIENT TECHNOLOGY SERVICES TRADE COMPANY LIMITED
+          </span>
         </div>
         <div className="flex items-center gap-2 mb-2">
           <IconMapPin size={20} className="text-pink-500" />
-          Địa chỉ: 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh
+          Số Nhà LK B10 Đường Gia Hưng Embassy Garden KĐT Tây Hồ Tây, Phường
+          Xuân Tảo, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam
         </div>
         <div className="flex items-center gap-2 mb-2">
           <IconMail size={20} className="text-sky-500" />
@@ -251,17 +254,17 @@ export const Contact = () => {
             href="mailto:contact@aificent.com"
             className="underline hover:text-sky-600 transition-colors"
           >
-            contact@aificent.com
+            aificient@gmail.com
           </a>
         </div>
         <div className="flex items-center gap-2 mb-2">
           <IconPhone size={20} className="text-green-500" />
           Điện thoại:
           <a
-            href="tel:+84123456789"
+            href="tel:+84359655166"
             className="underline hover:text-green-600 transition-colors"
           >
-            0123 456 789
+            0359 655 166
           </a>
         </div>
         <div className="flex gap-4 mt-4">
@@ -270,12 +273,6 @@ export const Contact = () => {
             className="flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-sky-400 to-purple-400 text-white text-xs font-semibold shadow hover:scale-105 transition-transform"
           >
             <IconInfoCircle size={16} /> Về chúng tôi
-          </a>
-          <a
-            href="/contact"
-            className="flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-pink-400 to-yellow-400 text-white text-xs font-semibold shadow hover:scale-105 transition-transform"
-          >
-            <IconMail size={16} /> Liên hệ
           </a>
         </div>
       </motion.section>
