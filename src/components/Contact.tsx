@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import toast from "react-hot-toast";
 import CustomToast from "./CustomToast";
+import { motion } from "framer-motion";
 
 const defaultFormState = {
   name: {
@@ -158,7 +159,14 @@ export const Contact = () => {
           Submit
         </button>
       </form>
-      <div className="relative z-10">
+      <motion.section
+        whileHover={{
+          // scale: 1.03,
+          boxShadow: "0 8px 32px 0 rgba(31,38,135,0.18)",
+          backgroundColor: "rgba(255,255,255,0.35)",
+        }}
+        className="relative z-10 bg-gradient-to-br from-blue-200/40 via-white/30 to-purple-200/40 bg-white/30 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-8 mb-8 mt-8 transition-all duration-300"
+      >
         <div className="flex items-center gap-2 font-bold text-base mb-4 text-sky-700">
           <IconInfoCircle size={22} className="text-sky-500 animate-bounce" />
           Thông tin liên hệ công ty
@@ -205,7 +213,7 @@ export const Contact = () => {
             <IconMail size={16} /> Liên hệ
           </a>
         </div>
-      </div>
+      </motion.section>
     </>
   );
 };
