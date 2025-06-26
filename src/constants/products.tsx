@@ -16,7 +16,7 @@ export const products = [
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
     stack: ["Hỗ trợ khách hàng", "Chatbot"],
-    slug: "aceternity",
+    slug: "ChatBot",
     content: (
       <div className="space-y-8">
         {/* Ứng dụng nội bộ cho nhân viên */}
@@ -167,7 +167,7 @@ export const products = [
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
     stack: ["Trực quan hóa dữ liệu", "Dự đoán", "Trí tuệ doanh nghiệp (BI)"],
-    slug: "tools",
+    slug: "Phan_tich_du_lieu",
     content: (
       <div className="space-y-8">
         <ul className="space-y-5 pl-2">
@@ -285,7 +285,7 @@ export const products = [
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
     stack: ["AI agent", "Tự động hóa", "Quản lý quy trình"],
-    slug: "moonbeam",
+    slug: "AI_Agent",
     content: (
       <div className="space-y-8">
         <div className="flex items-center gap-2 mb-2">

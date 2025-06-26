@@ -27,14 +27,14 @@ export default function CustomerSlider() {
     {
       name: "Anh Nghĩa ",
       title: "Trường đại học khoa học xã hôi & nhân văn ",
-      image: "/images/customer2.jpg",
+      image: "/images/customer4.jpg",
       quote:
         "AIficient quá ấn tượng! Sản phẩm tùy chỉnh cực linh hoạt, xử lý đa ngôn ngữ mượt mà, dù khối lượng tài liệu lớn vẫn chạy êm ru. Hiệu suất đỉnh cao, đáng để đầu tư!",
     },
     {
       name: "Ethan Wilson",
       title: "mle consulting services",
-      image: "/images/customer3.jpg",
+      image: "/images/Lawyer.png",
       quote:
         "AIficient is truly impressive! Its flexible customization and seamless multilingual processing handle massive document volumes with ease. Exceptional performance, perfect for sustained use.",
     },
