@@ -183,10 +183,10 @@ export default function About() {
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.05, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
         whileHover={{
-          scale: 1.03,
+          scale: 1.05,
           boxShadow: "0 8px 32px 0 rgba(31,38,135,0.37)",
           backgroundColor: "rgba(255,255,255,0.25)",
         }}
