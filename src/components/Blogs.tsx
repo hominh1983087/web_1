@@ -22,7 +22,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
             opacity: 1,
             x: 0,
           }}
-          transition={{ duration: 0.2, delay: index * 0.1 }}
+          transition={{ duration: 0.2, delay: index * 0.3 }}
         >
           <Link
             key={`blog-${blog.title}`}
