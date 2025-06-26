@@ -12,6 +12,7 @@ import {
 import toast from "react-hot-toast";
 import CustomToast from "./CustomToast";
 import { motion } from "framer-motion";
+import validator from "validator";
 
 const defaultFormState = {
   name: {
@@ -35,8 +36,44 @@ export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
 
   //backend
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const errors = {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    };
+
+    if (!formData.name.value.trim()) {
+      errors.name = "Vui lòng nhập tên của bạn.";
+    }
+
+    if (!formData.email.value.trim()) {
+      errors.email = "Vui lòng nhập địa chỉ email.";
+    } else if (!validator.isEmail(formData.email.value)) {
+      errors.email = "Địa chỉ email không hợp lệ.";
+    }
+
+    if (!formData.phone.value.trim()) {
+      errors.phone = "Vui lòng nhập số điện thoại.";
+    }
+
+    if (!formData.message.value.trim()) {
+      errors.message = "Vui lòng nhập ghi chú.";
+    }
+
+    if (errors.name || errors.email || errors.phone || errors.message) {
+      setFormData({
+        name: { ...formData.name, error: errors.name },
+        email: { ...formData.email, error: errors.email },
+        phone: { ...formData.phone, error: errors.phone },
+        message: { ...formData.message, error: errors.message },
+      });
+      return;
+    }
+
     try {
       const res = await fetch("http://localhost:5000/contact", {
         method: "POST",
@@ -93,51 +130,70 @@ export const Contact = () => {
     >
       <form className="form" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row justify-between gap-5">
-          <input
-            type="text"
-            placeholder="Tên của bạn"
-            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-            value={formData.name.value}
-            onChange={(e) => {
-              setFormData({
-                ...formData,
-                name: {
-                  value: e.target.value,
-                  error: "",
-                },
-              });
-            }}
-          />
-          <input
-            type="tel"
-            placeholder="Số điện thoại"
-            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-            value={formData.phone.value}
-            onChange={(e) => {
-              setFormData({
-                ...formData,
-                phone: {
-                  value: e.target.value,
-                  error: "",
-                },
-              });
-            }}
-          />
-          <input
-            type="email"
-            placeholder="Địa chỉ Email"
-            className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-            value={formData.email.value}
-            onChange={(e) => {
-              setFormData({
-                ...formData,
-                email: {
-                  value: e.target.value,
-                  error: "",
-                },
-              });
-            }}
-          />
+          <div className="w-full">
+            <input
+              type="text"
+              placeholder="Tên của bạn"
+              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              value={formData.name.value}
+              onChange={(e) => {
+                setFormData({
+                  ...formData,
+                  name: {
+                    value: e.target.value,
+                    error: "",
+                  },
+                });
+              }}
+            />
+            {formData.name.error && (
+              <p className="text-red-500 text-xs mt-1">{formData.name.error}</p>
+            )}
+          </div>
+          <div className="w-full">
+            <input
+              type="tel"
+              placeholder="Số điện thoại"
+              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              value={formData.phone.value}
+              onChange={(e) => {
+                setFormData({
+                  ...formData,
+                  phone: {
+                    value: e.target.value,
+                    error: "",
+                  },
+                });
+              }}
+            />
+            {formData.phone.error && (
+              <p className="text-red-500 text-xs mt-1">
+                {formData.phone.error}
+              </p>
+            )}
+          </div>
+          <div className="w-full">
+            <input
+              type="email"
+              placeholder="Địa chỉ Email"
+              className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
+              value={formData.email.value}
+              onChange={(e) => {
+                setFormData({
+                  ...formData,
+                  email: {
+                    value: e.target.value,
+                    error: "",
+                  },
+                });
+              }}
+            />
+            {formData.email.error && (
+              <p className="text-red-500 text-xs mt-1">
+                {formData.email.error}
+              </p>
+            )}
+          </div>
         </div>
         <div>
           <textarea
@@ -155,6 +211,11 @@ export const Contact = () => {
               });
             }}
           />
+          {formData.message.error && (
+            <p className="text-red-500 text-xs mt-1">
+              {formData.message.error}
+            </p>
+          )}
         </div>
         <button
           className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500"
