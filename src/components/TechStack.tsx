@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Heading } from "./Heading";
 import { twMerge } from "tailwind-merge";
+import CustomerSlider from "@/components/CustomerSlider";
 
 export const TechStack = () => {
   const stack = [
@@ -50,6 +51,7 @@ export const TechStack = () => {
           </div>
         ))}
       </div>
+      <CustomerSlider />
     </div>
   );
 };

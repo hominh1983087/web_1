@@ -64,121 +64,120 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-      {/* Section Text | Ảnh (text trái, ảnh phải) */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16 mt-16">
-          <div className="flex-1">
+      {/* Section Text | Ảnh (text trái, ảnh phải) + Giá trị cốt lõi + Quote */}
+      <div className="bg-white rounded-2xl shadow p-6 md:p-10 my-12">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-16 mt-16">
+            <div className="flex-1">
+              <h4 className="text-gray-400 text-lg font-medium mb-2">
+                Tầm nhìn của chúng tôi
+              </h4>
+              <h3 className="text-xl font-semibold mb-2">
+                Giải pháp công nghệ linh hoạt, hiệu quả cao
+              </h3>
+              <Paragraph>
+                AIFicent cung cấp giải pháp công nghệ linh hoạt, giúp doanh nghiệp
+                tối ưu vận hành, nâng cao trải nghiệm khách hàng và ra quyết định
+                chính xác nhờ dữ liệu. Mỗi sản phẩm được thiết kế từ hiểu biết sâu
+                sắc về bài toán thực tiễn, đảm bảo tính ứng dụng cao và bền vững.
+              </Paragraph>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <Image
+                src="/images/AI_image.jpg"
+                alt="Mission"
+                width={420}
+                height={300}
+                className="rounded-lg object-cover w-[420px] h-[300px]"
+              />
+            </div>
+          </div>
+        </motion.div>
+        {/* Our Values Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <div className="mt-20">
             <h4 className="text-gray-400 text-lg font-medium mb-2">
-              Tầm nhìn của chúng tôi
+              Giá trị cốt lõi
             </h4>
-            <h3 className="text-xl font-semibold mb-2">
-              Giải pháp công nghệ linh hoạt, hiệu quả cao
-            </h3>
-            <Paragraph>
-              AIFicent cung cấp giải pháp công nghệ linh hoạt, giúp doanh nghiệp
-              tối ưu vận hành, nâng cao trải nghiệm khách hàng và ra quyết định
-              chính xác nhờ dữ liệu. Mỗi sản phẩm được thiết kế từ hiểu biết sâu
-              sắc về bài toán thực tiễn, đảm bảo tính ứng dụng cao và bền vững.
-            </Paragraph>
-          </div>
-          <div className="flex-1 flex justify-center">
-            <Image
-              src="/images/AI_image.jpg"
-              alt="Mission"
-              width={420}
-              height={300}
-              className="rounded-lg object-cover w-[420px] h-[300px]"
-            />
-          </div>
-        </div>
-      </motion.div>
-      {/* Our Values Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="mt-20">
-          <h4 className="text-gray-400 text-lg font-medium mb-2">
-            Giá trị cốt lõi
-          </h4>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
-            Chúng tôi đang xây dựng một văn hóa
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div>
-              <div className="text-4xl mb-2">🧩</div>
-              <h3 className="text-xl font-semibold text-blue-900 mb-1">
-                Nhận diện vấn đề
-              </h3>
-              <p className="text-gray-500">
-                Chúng tôi đặt khách hàng làm trọng tâm, tạo ra giải pháp phù hợp
-                với nhu cầu của họ.
-              </p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🤝</div>
-              <h3 className="text-xl font-semibold text-blue-900 mb-1">
-                Dịch vụ khách hàng
-              </h3>
-              <p className="text-gray-500">
-                Chúng tôi cung cấp dịch vụ khách hàng tốt nhất, đảm bảo sự hài
-                lòng lòng và tối ưu hóa trải nghiệm.
-              </p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🌱</div>
-              <h3 className="text-xl font-semibold text-blue-900 mb-1">
-                Phát triển
-              </h3>
-              <p className="text-gray-500">
-                Chúng tôi đẩy mạnh sự phát triển, tối ưu hóa hoạt động và đảm
-                bảo tính bền vững.
-              </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
+              Chúng tôi đang xây dựng một văn hóa
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+              <div>
+                <div className="text-4xl mb-2">🧩</div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-1">
+                  Nhận diện vấn đề
+                </h3>
+                <p className="text-gray-500">
+                  Chúng tôi đặt khách hàng làm trọng tâm, tạo ra giải pháp phù hợp
+                  với nhu cầu của họ.
+                </p>
+              </div>
+              <div>
+                <div className="text-4xl mb-2">🤝</div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-1">
+                  Dịch vụ khách hàng
+                </h3>
+                <p className="text-gray-500">
+                  Chúng tôi cung cấp dịch vụ khách hàng tốt nhất, đảm bảo sự hài
+                  lòng lòng và tối ưu hóa trải nghiệm.
+                </p>
+              </div>
+              <div>
+                <div className="text-4xl mb-2">🌱</div>
+                <h3 className="text-xl font-semibold text-blue-900 mb-1">
+                  Phát triển
+                </h3>
+                <p className="text-gray-500">
+                  Chúng tôi đẩy mạnh sự phát triển, tối ưu hóa hoạt động và đảm
+                  bảo tính bền vững.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </motion.div>
-      {/* Chairman Quote Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1">
-            <blockquote className="text-2xl md:text-3xl italic text-gray-700 border-l-4 border-blue-500 pl-6">
-            "Mức sàn năng suất lao động đã thay đổi. 
+        </motion.div>
+        {/* Chairman Quote Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <blockquote className="text-2xl md:text-xl italic text-gray-700 border-l-4 border-blue-500 pl-6">
+              "Mức sàn năng suất lao động đã thay đổi. 
 Nếu như trước kia làm việc năng suất gấp 2-3 lần, 
 nhân sự sẽ được ghi nhận và khen thưởng. 
 Nhưng giờ đây, với sự hỗ trợ của AI, 
 việc đạt mức năng suất cao như vậy chỉ được xem là tiêu chuẩn."
-            </blockquote>
-            <p className="mt-4 text-right font-bold text-blue-900 text-lg">
-              — Nguyễn Gia Hy, Co-Founder AIFicent
-            </p>
+              </blockquote>
+              <p className="mt-4 text-right font-bold text-blue-900 text-sm">
+— Nguyễn Gia Hy, Co-Founder AIFicent
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center md:justify-end">
+              <Image
+                src="/images/Nguyen_Gia_Hy_COF.png"
+                alt="Chairman of AIFicent"
+                width={350}
+                height={350}
+                className="rounded-full object-cover w-[250px] h-[250px] md:w-[350px] md:h-[350px] shadow-lg"
+              />
+            </div>
           </div>
-          <div className="flex-1 flex justify-center md:justify-end">
-            <Image
-              src="/images/Nguyen_Gia_Hy_COF.png"
-              alt="Chairman of AIFicent"
-              width={350}
-              height={350}
-              className="rounded-full object-cover w-[250px] h-[250px] md:w-[350px] md:h-[350px] shadow-lg"
-            />
-          </div>
-        </div>
-      </motion.div>
-
-      {/* {Customer Section} */}
-      <CustomerSlider />
+        </motion.div>
+      </div>
 
       {/* Call To Action Section */}
       <motion.div
