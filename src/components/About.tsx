@@ -176,31 +176,42 @@ export default function About() {
       </motion.div>
 
       {/* {Customer Section} */}
-      <CustomerSection />
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <CustomerSection />
+      </motion.div>
 
       {/* Call To Action Section */}
-      <motion.div
+      <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
+        whileHover={{
+          scale: 1.03,
+          boxShadow: "0 8px 32px 0 rgba(31,38,135,0.37)",
+          backgroundColor: "rgba(255,255,255,0.25)",
+        }}
+        className="mt-24 bg-gradient-to-br from-blue-400/30 via-white/10 to-purple-400/30 bg-white/20 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-10 text-center text-gray-500 max-w-3xl mx-auto transition-all duration-300"
       >
-        <div className="mt-24 bg-blue-900/90 rounded-2xl p-10 text-center text-white shadow-xl max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">
-            Bạn đã sẵn sàng chuyển đổi số?
-          </h2>
-          <p className="mb-6 text-lg">
-            Đăng ký nhận tư vấn miễn phí từ chuyên gia AI của AIFicent để bứt
-            phá doanh nghiệp của bạn!
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow hover:bg-blue-100 transition"
-          >
-            Đăng ký tư vấn miễn phí
-          </a>
-        </div>
-      </motion.div>
+        <h2 className="text-3xl font-bold mb-4 ">
+          Bạn đã sẵn sàng chuyển đổi số?
+        </h2>
+        <p className="mb-6 text-lg">
+          Đăng ký nhận tư vấn miễn phí từ chuyên gia AI của AIFicent để bứt phá
+          doanh nghiệp của bạn!
+        </p>
+        <a
+          href="/contact"
+          className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full shadow hover:bg-blue-100 transition"
+        >
+          Đăng ký tư vấn miễn phí
+        </a>
+      </motion.section>
     </div>
   );
 }
