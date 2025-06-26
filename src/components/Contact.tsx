@@ -91,7 +91,7 @@ export const Contact = () => {
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="Tên của bạn"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.name.value}
             onChange={(e) => {
@@ -106,7 +106,7 @@ export const Contact = () => {
           />
           <input
             type="tel"
-            placeholder="Your phone number"
+            placeholder="Số điện thoại"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.phone.value}
             onChange={(e) => {
@@ -121,7 +121,7 @@ export const Contact = () => {
           />
           <input
             type="email"
-            placeholder="Your email address"
+            placeholder="Địa chỉ Email"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.email.value}
             onChange={(e) => {
@@ -137,7 +137,7 @@ export const Contact = () => {
         </div>
         <div>
           <textarea
-            placeholder="Your Message"
+            placeholder="Ghi chú"
             rows={10}
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.message.value}
