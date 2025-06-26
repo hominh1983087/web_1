@@ -3,7 +3,7 @@ import sidefolioAceternity2 from "public/images/chatbot2.jpg";
 import sidefolioAlgochurn from "public/images/phantich1.jpg";
 import sidefolioAlgochurn2 from "public/images/phantich2.jpg";
 import sidefolioMoonbeam from "public/images/aiagent1.jpg";
-import sidefolioMoonbeam2 from "public/images/aiagent1.jpg";
+import sidefolioMoonbeam2 from "public/images/aiagent2.jpg";
 import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
 import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
 
