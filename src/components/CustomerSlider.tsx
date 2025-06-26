@@ -20,7 +20,7 @@ export default function CustomerSlider() {
     {
       name: "Trịnh Vũ Nghĩa",
       title: "Bệnh Viện Chợ Rẫy",
-      image: "/images/customer4.jpg",
+      image: "/images/Vietnam_doctor.png",
       quote:
         "Tôi thật sự ấn tượng với sản phẩm AI của AIFicent – hệ thống có khả năng tiếp thu hàng ngàn trang tài liệu, vượt xa giới hạn vài trăm trang trên thị trường.",
     },
