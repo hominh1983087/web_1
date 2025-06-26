@@ -18,25 +18,25 @@ export default function CustomerSlider() {
 
   const customers = [
     {
-      name: "Nguyễn Hoàng Long",
-      title: "Giám đốc Điều hành Bệnh Viện, Bệnh Viện Chợ Rẫy",
+      name: "Trịnh Vũ Nghĩa",
+      title: "Bệnh Viện Chợ Rẫy",
       image: "/images/customer4.jpg",
       quote:
-        "Giải pháp tự động hóa quy trình bằng AI của AIFicent đã giúp chúng tôi giảm 30% chi phí vận hành và tăng độ chính xác trong chuỗi cung ứng. Một bước đột phá thực sự cho ngành logistics.",
+        "Tôi thật sự ấn tượng với sản phẩm AI của AIFicent – hệ thống có khả năng tiếp thu hàng ngàn trang tài liệu, vượt xa giới hạn vài trăm trang trên thị trường.",
     },
     {
-      name: "Trần Minh Anh",
-      title: "Trưởng phòng Marketing, Sendo Retail",
+      name: "Anh Nghĩa ",
+      title: "Trường đại học khoa học xã hôi & nhân văn ",
       image: "/images/customer2.jpg",
       quote:
-        "Nhờ hệ thống phân tích hành vi khách hàng của AIFicent, chúng tôi đã xây dựng được các chiến dịch marketing cá nhân hóa hiệu quả, giúp tăng tỷ lệ chuyển đổi lên 40% và doanh thu tăng trưởng rõ rệt.",
+        "AIficient quá ấn tượng! Sản phẩm tùy chỉnh cực linh hoạt, xử lý đa ngôn ngữ mượt mà, dù khối lượng tài liệu lớn vẫn chạy êm ru. Hiệu suất đỉnh cao, đáng để đầu tư!",
     },
     {
-      name: "Lê Quốc Bảo",
-      title: "Giám đốc Công nghệ, TechNext Solutions",
+      name: "Ethan Wilson",
+      title: "mle consulting services",
       image: "/images/customer3.jpg",
       quote:
-        "Đội ngũ AIFicent không chỉ cung cấp một giải pháp AI tùy chỉnh mạnh mẽ mà còn hợp tác chặt chẽ như một phần của đội ngũ chúng tôi. Năng lực kỹ thuật và sự hỗ trợ tận tâm của họ đã giúp chúng tôi rút ngắn thời gian ra mắt sản phẩm xuống một nửa.",
+        "AIficient is truly impressive! Its flexible customization and seamless multilingual processing handle massive document volumes with ease. Exceptional performance, perfect for sustained use.",
     },
   ];
 
