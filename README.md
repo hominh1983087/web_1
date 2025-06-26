@@ -33,9 +33,25 @@ Các sản phẩm chính bao gồm:
     npm install
     ```
 
-3.  **Khởi động dự án:**
+3.  **Cài đặt thêm package nếu cần:**
+
+    ```bash
+    npm i package
+    ```
+
+4.  **Khởi động dự án Next.js:**
     ```bash
     npm start
+    ```
+5.  **tạo backend Mysql**
+    ```bash
+    server\index.js sửa name table , password
+    web_1\sql tạo table trong mysql
+
+    ```
+6.  **Khởi động server backend:**
+    ```bash
+    npm run server
     ```
 
 Dự án sẽ được chạy trên `http://localhost:3000`.
