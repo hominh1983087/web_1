@@ -30,7 +30,7 @@ export default function RootLayout({
         )}
       >
         <Sidebar />
-        <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
+        <div className="lg:pl-2 lg:pt-2 bg-gray-200 flex-1 overflow-y-auto">
           <div className="flex flex-col flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
             <div className="flex-1">{children}</div>
             <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
