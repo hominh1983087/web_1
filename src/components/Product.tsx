@@ -12,7 +12,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
     product.thumbnail
   );
   return (
-    <div className="py-10">
+    <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 my-4">
       <motion.div
         initial={{
           opacity: 0,

@@ -155,9 +155,11 @@ export default function About() {
         <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
             <blockquote className="text-2xl md:text-3xl italic text-gray-700 border-l-4 border-blue-500 pl-6">
-              "AI là một công cụ, và nếu chứng minh được hiệu quả vượt trội về
-              kết quả, việc tăng lương là hoàn toàn chính đáng theo chính sách
-              công ty"
+            "Mức sàn năng suất lao động đã thay đổi. 
+Nếu như trước kia làm việc năng suất gấp 2-3 lần, 
+nhân sự sẽ được ghi nhận và khen thưởng. 
+Nhưng giờ đây, với sự hỗ trợ của AI, 
+việc đạt mức năng suất cao như vậy chỉ được xem là tiêu chuẩn."
             </blockquote>
             <p className="mt-4 text-right font-bold text-blue-900 text-lg">
               — Nguyễn Gia Hy, Co-Founder AIFicent
