@@ -17,7 +17,7 @@ const contacts = [];
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "123456", // Đổi thành mật khẩu MySQL của bạn
+  password: "fuckfuck2001", // Đổi thành mật khẩu MySQL của bạn
   database: "aificent", // Đổi thành tên database của bạn
 });
 

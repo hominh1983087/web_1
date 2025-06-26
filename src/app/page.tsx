@@ -9,11 +9,11 @@ import { FaMedal, FaBolt, FaMoneyBillWave } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-slate-100 min-h-screen">
       <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] flex items-center justify-center min-h-[90vh] !mt-0">
         {/* Ảnh nền */}
         <Image
-          src="/images/AdobeStock_1208418995_Preview.jpeg"
+          src="/images/hero_section.webp"
           alt="AI Illustration"
           fill
           className="object-cover w-full h-full"
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Container>
+      <Container className="bg-slate-100">
         <Heading
           as="h2"
           className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
@@ -59,13 +59,13 @@ export default function Home() {
         {/* Section Lý do chọn chúng tôi */}
         <Heading
           as="h2"
-          className="font-black text-lg md:text-xl mb-8 text-center mt-16"
+          className="font-black text-lg md:text-xl mb-8 text-center mt-16 text-blue-500"
         >
           Lý do chọn chúng tôi
         </Heading>
         <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch mb-12">
           {/* Card 1 */}
-          <div className="bg-gray-200 rounded-xl shadow-md p-6 flex-1 max-w-sm mx-auto flex flex-col">
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex-1 max-w-sm mx-auto flex flex-col">
             <div className="flex items-center justify-center mb-4 text-3xl text-[#7479fb]">
               <FaMedal />
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
             <p className="text-gray-600 mb-4 flex-1">Chúng tôi cam kết mang đến sản phẩm với chất lượng vượt trội, kiểm định nghiêm ngặt qua từng khâu, đáp ứng mọi tiêu chuẩn khắt khe nhất.</p>
           </div>
           {/* Card 2 */}
-          <div className="bg-gray-200 rounded-xl shadow-md p-6 flex-1 max-w-sm mx-auto flex flex-col">
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex-1 max-w-sm mx-auto flex flex-col">
             <div className="flex items-center justify-center mb-4 text-3xl text-[#7479fb]">
               <FaBolt />
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
             <p className="text-gray-600 mb-4 flex-1">Hiệu suất vận hành mạnh mẽ, tối ưu hóa cho mọi quy mô doanh nghiệp, giúp bạn luôn dẫn đầu trong mọi cuộc cạnh tranh.</p>
           </div>
           {/* Card 3 */}
-          <div className="bg-gray-200 rounded-xl shadow-md p-6 flex-1 max-w-sm mx-auto flex flex-col">
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex-1 max-w-sm mx-auto flex flex-col">
             <div className="flex items-center justify-center mb-4 text-3xl text-[#7479fb]">
               <FaMoneyBillWave />
             </div>
@@ -91,6 +91,6 @@ export default function Home() {
         </div>
         <TechStack />
       </Container>
-    </>
+    </div>
   );
 }
