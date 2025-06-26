@@ -18,73 +18,61 @@ export default function CustomerSlider() {
 
   const customers = [
     {
-      name: "Nguyễn Văn A",
-      title: "CEO, Công ty ABC",
-      image: "/images/customer1.jpg",
+      name: "Nguyễn Hoàng Long",
+      title: "Giám đốc Điều hành Bệnh Viện, Bệnh Viện Chợ Rẫy",
+      image: "/images/customer4.jpg",
       quote:
-        "Nhờ giải pháp AI của AIFicent, chúng tôi đã tối ưu hóa quy trình vận hành, tiết kiệm 30% chi phí và nâng cao trải nghiệm khách hàng vượt trội.",
+        "Giải pháp tự động hóa quy trình bằng AI của AIFicent đã giúp chúng tôi giảm 30% chi phí vận hành và tăng độ chính xác trong chuỗi cung ứng. Một bước đột phá thực sự cho ngành logistics.",
     },
     {
-      name: "Trần Thị B",
-      title: "Giám đốc Marketing, XYZ",
+      name: "Trần Minh Anh",
+      title: "Trưởng phòng Marketing, Sendo Retail",
       image: "/images/customer2.jpg",
       quote:
-        "AIFicent đã giúp chúng tôi phân tích dữ liệu khách hàng hiệu quả, từ đó xây dựng chiến lược marketing cá nhân hóa và tăng trưởng doanh thu rõ rệt.",
+        "Nhờ hệ thống phân tích hành vi khách hàng của AIFicent, chúng tôi đã xây dựng được các chiến dịch marketing cá nhân hóa hiệu quả, giúp tăng tỷ lệ chuyển đổi lên 40% và doanh thu tăng trưởng rõ rệt.",
     },
     {
-      name: "Lê Quốc C",
-      title: "CTO, DEF Solutions",
+      name: "Lê Quốc Bảo",
+      title: "Giám đốc Công nghệ, TechNext Solutions",
       image: "/images/customer3.jpg",
       quote:
-        "Đội ngũ AIFicent rất chuyên nghiệp, hỗ trợ tận tình và luôn đưa ra giải pháp phù hợp với nhu cầu thực tế của doanh nghiệp chúng tôi.",
+        "Đội ngũ AIFicent không chỉ cung cấp một giải pháp AI tùy chỉnh mạnh mẽ mà còn hợp tác chặt chẽ như một phần của đội ngũ chúng tôi. Năng lực kỹ thuật và sự hỗ trợ tận tâm của họ đã giúp chúng tôi rút ngắn thời gian ra mắt sản phẩm xuống một nửa.",
     },
   ];
 
   return (
     <div className="mt-20">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        viewport={{ once: true, amount: 0.5 }}
-      >
+      <div className="text-center mb-10">
         <h4 className="text-gray-400 text-lg font-medium mb-2">
           Câu chuyện thành công
         </h4>
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
           Khách hàng nói về chúng tôi
         </h2>
-      </motion.div>
-
-      <div ref={sliderRef} className="keen-slider">
-        {customers.map((cus, idx) => (
-          <motion.div
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {customers.map((cus) => (
+          <div
             key={cus.name}
-            className="keen-slider__slide flex"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 * idx }}
-            viewport={{ once: true, amount: 0.5 }}
+            className="bg-white/80 rounded-xl p-6 shadow-xl flex flex-col h-full hover:scale-105 transition-transform duration-300"
           >
-            <div className="bg-white/80 rounded-xl p-6 shadow-xl flex flex-col h-full w-full hover:scale-105 transition-transform duration-300">
-              <div className="flex items-center mb-4">
-                <Image
-                  src={cus.image}
-                  alt={cus.name}
-                  width={56}
-                  height={56}
-                  className="rounded-full w-14 h-14 object-cover border-2 border-blue-200"
-                />
-                <div className="ml-4">
-                  <p className="font-semibold text-blue-900">{cus.name}</p>
-                  <p className="text-gray-500 text-sm">{cus.title}</p>
-                </div>
+            <div className="flex items-center mb-4">
+              <Image
+                src={cus.image}
+                alt={cus.name}
+                width={56}
+                height={56}
+                className="rounded-full w-14 h-14 object-cover border-2 border-blue-200"
+              />
+              <div className="ml-4">
+                <p className="font-semibold text-blue-900">{cus.name}</p>
+                <p className="text-gray-500 text-sm">{cus.title}</p>
               </div>
-              <p className="text-gray-700 flex-1">"{cus.quote}"</p>
             </div>
-          </motion.div>
+            <p className="text-gray-700 flex-1">"{cus.quote}"</p>
+          </div>
         ))}
       </div>
     </div>
   );
-} 
+}

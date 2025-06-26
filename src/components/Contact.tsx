@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import toast from "react-hot-toast";
 import CustomToast from "./CustomToast";
+import { motion } from "framer-motion";
 
 const defaultFormState = {
   name: {
@@ -85,12 +86,16 @@ export const Contact = () => {
 
   //frontend
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, x: -80 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <form className="form" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="Tên của bạn"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.name.value}
             onChange={(e) => {
@@ -105,7 +110,7 @@ export const Contact = () => {
           />
           <input
             type="tel"
-            placeholder="Your phone number"
+            placeholder="Số điện thoại"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.phone.value}
             onChange={(e) => {
@@ -120,7 +125,7 @@ export const Contact = () => {
           />
           <input
             type="email"
-            placeholder="Your email address"
+            placeholder="Địa chỉ Email"
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.email.value}
             onChange={(e) => {
@@ -136,7 +141,7 @@ export const Contact = () => {
         </div>
         <div>
           <textarea
-            placeholder="Your Message"
+            placeholder="Ghi chú"
             rows={10}
             className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
             value={formData.message.value}
@@ -158,7 +163,14 @@ export const Contact = () => {
           Submit
         </button>
       </form>
-      <div className="relative z-10">
+      <motion.section
+        whileHover={{
+          // scale: 1.03,
+          boxShadow: "0 8px 32px 0 rgba(31,38,135,0.18)",
+          backgroundColor: "rgba(255,255,255,0.35)",
+        }}
+        className="relative z-10 bg-gradient-to-br from-blue-200/40 via-white/30 to-purple-200/40 bg-white/30 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-8 mb-8 mt-8 transition-all duration-300"
+      >
         <div className="flex items-center gap-2 font-bold text-base mb-4 text-sky-700">
           <IconInfoCircle size={22} className="text-sky-500 animate-bounce" />
           Thông tin liên hệ công ty
@@ -205,7 +217,7 @@ export const Contact = () => {
             <IconMail size={16} /> Liên hệ
           </a>
         </div>
-      </div>
-    </>
+      </motion.section>
+    </motion.div>
   );
 };

@@ -21,14 +21,21 @@ export default function Home() {
           priority
         />
         {/* Overlay tối mờ */}
-        <div className="absolute inset-0 bg-black/30" style={{ zIndex: 2 }}></div>
+        <div
+          className="absolute inset-0 bg-black/30"
+          style={{ zIndex: 2 }}
+        ></div>
         {/* Nội dung chữ + nút */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4" style={{ zIndex: 3 }}>
+        <div
+          className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+          style={{ zIndex: 3 }}
+        >
           <h1 className="text-2xl md:text-4xl font-black text-white mb-4 drop-shadow-lg">
             Nền tảng AI dành riêng cho doanh nghiệp hiện đại
           </h1>
           <p className="text-gray-300 text-sm md:text-base max-w-2xl mb-8">
-            Hỗ trợ tự động hóa quy trình, giảm thiểu chi phí vận hành và mang đến trải nghiệm khách hàng liền mạch, thông minh hơn bao giờ hết
+            Hỗ trợ tự động hóa quy trình, giảm thiểu chi phí vận hành và mang
+            đến trải nghiệm khách hàng liền mạch, thông minh hơn bao giờ hết
           </p>
           <div className="flex gap-4">
             <a
@@ -70,7 +77,11 @@ export default function Home() {
               <FaMedal />
             </div>
             <h3 className="font-bold text-lg mb-2">Chất Lượng Cao</h3>
-            <p className="text-gray-600 mb-4 flex-1">Chúng tôi cam kết mang đến sản phẩm với chất lượng vượt trội, kiểm định nghiêm ngặt qua từng khâu, đáp ứng mọi tiêu chuẩn khắt khe nhất.</p>
+            <p className="text-gray-600 mb-4 flex-1">
+              Chúng tôi cam kết mang đến sản phẩm với chất lượng vượt trội, kiểm
+              định nghiêm ngặt qua từng khâu, đáp ứng mọi tiêu chuẩn khắt khe
+              nhất.
+            </p>
           </div>
           {/* Card 2 */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex-1 max-w-sm mx-auto flex flex-col">
@@ -78,7 +89,10 @@ export default function Home() {
               <FaBolt />
             </div>
             <h3 className="font-bold text-lg mb-2">Hiệu Suất Tối Ưu</h3>
-            <p className="text-gray-600 mb-4 flex-1">Hiệu suất vận hành mạnh mẽ, tối ưu hóa cho mọi quy mô doanh nghiệp, giúp bạn luôn dẫn đầu trong mọi cuộc cạnh tranh.</p>
+            <p className="text-gray-600 mb-4 flex-1">
+              Hiệu suất vận hành mạnh mẽ, tối ưu hóa cho mọi quy mô doanh
+              nghiệp, giúp bạn luôn dẫn đầu trong mọi cuộc cạnh tranh.
+            </p>
           </div>
           {/* Card 3 */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex-1 max-w-sm mx-auto flex flex-col">
@@ -86,7 +100,10 @@ export default function Home() {
               <FaMoneyBillWave />
             </div>
             <h3 className="font-bold text-lg mb-2">Giá Cả Hợp Lý</h3>
-            <p className="text-gray-600 mb-4 flex-1">Giải pháp tối ưu chi phí, cam kết mức giá cạnh tranh nhất thị trường, giúp bạn đầu tư hiệu quả mà vẫn đảm bảo chất lượng.</p>
+            <p className="text-gray-600 mb-4 flex-1">
+              Giải pháp tối ưu chi phí, cam kết mức giá cạnh tranh nhất thị
+              trường, giúp bạn đầu tư hiệu quả mà vẫn đảm bảo chất lượng.
+            </p>
           </div>
         </div>
         <TechStack />
