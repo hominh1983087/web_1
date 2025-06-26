@@ -18,25 +18,25 @@ export default function CustomerSlider() {
 
   const customers = [
     {
-      name: "Nguyễn Văn A",
-      title: "CEO, Công ty ABC",
-      image: "/images/customer1.jpg",
+      name: "Nguyễn Hoàng Long",
+      title: "Giám đốc Điều hành Bệnh Viện, Bệnh Viện Chợ Rẫy",
+      image: "/images/customer4.jpg",
       quote:
-        "Nhờ giải pháp AI của AIFicent, chúng tôi đã tối ưu hóa quy trình vận hành, tiết kiệm 30% chi phí và nâng cao trải nghiệm khách hàng vượt trội.",
+        "Giải pháp tự động hóa quy trình bằng AI của AIFicent đã giúp chúng tôi giảm 30% chi phí vận hành và tăng độ chính xác trong chuỗi cung ứng. Một bước đột phá thực sự cho ngành logistics.",
     },
     {
-      name: "Trần Thị B",
-      title: "Giám đốc Marketing, XYZ",
+      name: "Trần Minh Anh",
+      title: "Trưởng phòng Marketing, Sendo Retail",
       image: "/images/customer2.jpg",
       quote:
-        "AIFicent đã giúp chúng tôi phân tích dữ liệu khách hàng hiệu quả, từ đó xây dựng chiến lược marketing cá nhân hóa và tăng trưởng doanh thu rõ rệt.",
+        "Nhờ hệ thống phân tích hành vi khách hàng của AIFicent, chúng tôi đã xây dựng được các chiến dịch marketing cá nhân hóa hiệu quả, giúp tăng tỷ lệ chuyển đổi lên 40% và doanh thu tăng trưởng rõ rệt.",
     },
     {
-      name: "Lê Quốc C",
-      title: "CTO, DEF Solutions",
+      name: "Lê Quốc Bảo",
+      title: "Giám đốc Công nghệ, TechNext Solutions",
       image: "/images/customer3.jpg",
       quote:
-        "Đội ngũ AIFicent rất chuyên nghiệp, hỗ trợ tận tình và luôn đưa ra giải pháp phù hợp với nhu cầu thực tế của doanh nghiệp chúng tôi.",
+        "Đội ngũ AIFicent không chỉ cung cấp một giải pháp AI tùy chỉnh mạnh mẽ mà còn hợp tác chặt chẽ như một phần của đội ngũ chúng tôi. Năng lực kỹ thuật và sự hỗ trợ tận tâm của họ đã giúp chúng tôi rút ngắn thời gian ra mắt sản phẩm xuống một nửa.",
     },
   ];
 
