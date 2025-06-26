@@ -15,169 +15,94 @@ export const products = [
       "Giải pháp trợ lý ảo giúp doanh nghiệp nâng cao hiệu suất làm việc, tối ưu quản lý tri thức nội bộ và hỗ trợ khách hàng 24/7 với chi phí vận hành thấp.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["AI agent", "Chatbot"],
+    stack: ["Hỗ trợ khách hàng", "Chatbot"],
     slug: "aceternity",
     content: (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-blue-900 mb-4">
-          1. Hệ thống chatbot / kho tri thức thông minh
-        </h2>
-        <h3 className="text-xl font-semibold text-blue-800 mt-6 mb-2">
-          1.1 Cho nhân viên công ty
-        </h3>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Truy cập thông tin nhanh chóng và chính xác
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tìm kiếm thông tin từ nhiều nguồn nội bộ chỉ trong vài giây</li>
-          <li>
-            Cung cấp câu trả lời chính xác từ tài liệu chính thức của công ty
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Đẩy nhanh quá trình đào tạo nhân viên mới
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Rút ngắn thời gian hòa nhập cho nhân viên mới</li>
-          <li>Giảm gánh nặng đào tạo cho nhân viên cấp cao</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Duy trì kiến thức tổ chức
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Lưu giữ kinh nghiệm và kiến thức của nhân viên dày dạn</li>
-          <li>Đảm bảo kiến thức không bị mất đi khi nhân sự nghỉ việc</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Tăng hiệu suất làm việc
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>
-            Giảm thời gian tìm kiếm thông tin (trung bình 30% thời gian làm
-            việc)
-          </li>
-          <li>
-            Giảm gián đoạn công việc do phải chờ đợi phản hồi từ đồng nghiệp
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Chuẩn hóa quy trình và thông tin
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Đảm bảo mọi người đều nhận được thông tin nhất quán</li>
-          <li>Giảm sai sót do hiểu sai hoặc thiếu thông tin</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Hỗ trợ ra quyết định
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>
-            Cung cấp dữ liệu và thông tin cần thiết cho việc ra quyết định
-          </li>
-          <li>
-            Truy xuất các tiền lệ và kinh nghiệm xử lý tình huống trong quá khứ
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Tối ưu hóa quản lý tri thức
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tự động cập nhật kho tri thức từ các nguồn nội bộ</li>
-          <li>
-            Phân tích các câu hỏi thường gặp để xác định khoảng trống kiến thức
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Phá vỡ rào cản thông tin giữa các phòng ban
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tạo điều kiện chia sẻ kiến thức xuyên phòng ban</li>
-          <li>Cải thiện hợp tác nội bộ qua việc tiếp cận thông tin chung</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Giảm áp lực cho đội ngũ IT và quản lý
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Giảm số lượng yêu cầu hỗ trợ thông tin cơ bản</li>
-          <li>
-            Tự động hóa việc giải đáp các câu hỏi thường gặp về công nghệ, quy
-            trình
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Đo lường và cải thiện hiệu suất làm việc
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Theo dõi các chủ đề được tìm kiếm nhiều nhất</li>
-          <li>
-            Xác định các lĩnh vực cần đào tạo thêm hoặc cải thiện quy trình
-          </li>
-        </ul>
-        <h3 className="text-xl font-semibold text-blue-800 mt-6 mb-2">
-          1.2 Cho khách hàng của công ty
-        </h3>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Hỗ trợ khách hàng 24/7
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Phản hồi tức thì mọi lúc, không bị giới hạn bởi giờ làm việc</li>
-          <li>
-            Giải quyết các câu hỏi thường gặp ngay lập tức, không cần thời gian
-            chờ đợi
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Tối ưu hóa nguồn lực nhân sự
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>
-            Giảm tải công việc cho nhân viên CSKH, giúp họ tập trung vào các vấn
-            đề phức tạp
-          </li>
-          <li>Tiết kiệm chi phí thuê nhân sự hỗ trợ khách hàng cơ bản</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Nâng cao trải nghiệm khách hàng
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tương tác nhất quán và chuyên nghiệp</li>
-          <li>
-            Cá nhân hóa trải nghiệm dựa trên lịch sử giao dịch và hành vi khách
-            hàng
-          </li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Thu thập dữ liệu và phân tích xu hướng
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>
-            Hiểu rõ nhu cầu khách hàng thông qua phân tích các câu hỏi thường
-            gặp
-          </li>
-          <li>Phát hiện các vấn đề lặp lại để cải thiện sản phẩm/dịch vụ</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Tăng tỷ lệ chuyển đổi và bán hàng
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tư vấn sản phẩm/dịch vụ phù hợp dựa trên nhu cầu khách hàng</li>
-          <li>Hỗ trợ quá trình mua hàng, giải đáp thắc mắc tức thời</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Tiết kiệm chi phí vận hành dài hạn
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Đầu tư một lần, sử dụng lâu dài với chi phí duy trì thấp</li>
-          <li>Mở rộng quy mô dễ dàng mà không cần tăng chi phí tuyến tính</li>
-        </ul>
-        <h4 className="text-lg font-semibold text-blue-700 mt-4 mb-1">
-          Đa dạng kênh tương tác
-        </h4>
-        <ul className="list-disc pl-6 text-gray-700 space-y-1">
-          <li>Tích hợp trên website, ứng dụng, mạng xã hội, Zalo, Messenger</li>
-          <li>Tạo trải nghiệm nhất quán trên mọi kênh giao tiếp</li>
-        </ul>
-        <p className="text-blue-900 font-bold mt-6">Từ 2.990.000₫</p>
+      <div className="space-y-8">
+        {/* Ứng dụng nội bộ cho nhân viên */}
+        <div>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-2xl">🏢</span>
+            <span className="font-bold text-blue-900 text-lg">Ứng dụng nội bộ cho nhân viên</span>
+          </div>
+          <ul className="space-y-3 pl-2">
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Truy cập & tìm kiếm thông tin nhanh chóng:</span>
+              <span className="block text-gray-700 ml-7">Tìm tài liệu, quy trình, thông tin từ nhiều nguồn chỉ trong vài giây. Trả lời chính xác dựa trên tài liệu nội bộ chính thống.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Tăng hiệu quả đào tạo & quản lý nhân sự:</span>
+              <span className="block text-gray-700 ml-7">Hỗ trợ onboarding, giảm gánh nặng đào tạo, lưu giữ và kế thừa kiến thức tổ chức.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Tăng năng suất làm việc:</span>
+              <span className="block text-gray-700 ml-7">Giảm 30% thời gian tìm kiếm thông tin, hạn chế gián đoạn do chờ phản hồi.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Đảm bảo thông tin nhất quán:</span>
+              <span className="block text-gray-700 ml-7">Chuẩn hóa câu trả lời, quy trình, giảm sai sót do hiểu nhầm.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Hỗ trợ ra quyết định:</span>
+              <span className="block text-gray-700 ml-7">Gợi ý từ dữ liệu, tiền lệ, kinh nghiệm thực tế. Phân tích xu hướng câu hỏi.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Tăng cường hợp tác liên phòng ban:</span>
+              <span className="block text-gray-700 ml-7">Phá bỏ rào cản thông tin, tăng chia sẻ tri thức nội bộ.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Giảm tải cho IT & quản lý:</span>
+              <span className="block text-gray-700 ml-7">Tự động giải đáp các câu hỏi về hệ thống, quy trình, giảm yêu cầu hỗ trợ lặp lại.</span>
+            </li>
+          </ul>
+        </div>
+        {/* Ứng dụng cho khách hàng */}
+        <div>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-2xl">💬</span>
+            <span className="font-bold text-blue-900 text-lg">Ứng dụng cho khách hàng</span>
+          </div>
+          <ul className="space-y-3 pl-2">
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Hỗ trợ 24/7:</span>
+              <span className="block text-gray-700 ml-7">Phản hồi tức thời, tự động xử lý các câu hỏi phổ biến.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Tiết kiệm chi phí & tối ưu nguồn lực:</span>
+              <span className="block text-gray-700 ml-7">Giảm tải cho đội ngũ CSKH, tối ưu chi phí nhờ tự động hóa.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Nâng cao trải nghiệm khách hàng:</span>
+              <span className="block text-gray-700 ml-7">Tương tác nhất quán, thân thiện, cá nhân hóa phản hồi.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Tăng trưởng & bán hàng:</span>
+              <span className="block text-gray-700 ml-7">Gợi ý sản phẩm phù hợp, hỗ trợ quyết định mua nhanh chóng.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Phân tích & cải tiến dịch vụ:</span>
+              <span className="block text-gray-700 ml-7">Thu thập dữ liệu tương tác, phát hiện vấn đề lặp lại, cải thiện dịch vụ.</span>
+            </li>
+            <li>
+              <span className="text-green-500 mr-2"></span>
+              <span className="font-semibold">Dễ dàng mở rộng & tích hợp đa kênh:</span>
+              <span className="block text-gray-700 ml-7">Tích hợp linh hoạt: Website, App, Zalo, Messenger, Facebook... Mở rộng quy mô dễ dàng.</span>
+            </li>
+          </ul>
+        </div>
+        <p className="text-blue-900 font-bold text-lg mt-6">Từ 2.990.000₫</p>
       </div>
     ),
   },
@@ -188,62 +113,86 @@ export const products = [
       "Ứng dụng phân tích dữ liệu giúp doanh nghiệp ra quyết định chính xác, tối ưu vận hành, tăng lợi nhuận và nắm bắt cơ hội thị trường hiệu quả.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["AI Agent", "Công cụ AI"],
+    stack: ["Trực quan hóa dữ liệu","Dự đoán","Trí tuệ doanh nghiệp (BI)"],
     slug: "tools",
     content: (
-      <div>
-        <h3>2.1 Ra quyết định dựa trên dữ liệu</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Thay thế cảm tính bằng phân tích khách quan</li>
+      <div className="space-y-8">
+        <ul className="space-y-5 pl-2">
           <li>
-            Giảm thiểu rủi ro trong quá trình ra quyết định kinh doanh. Dự báo
-            xu hướng thị trường
+            <span className="text-xl mr-2">📊</span>
+            <span className="font-semibold">Ra quyết định dựa trên dữ liệu</span>
+            <div className="text-gray-700 ml-7">
+              Loại bỏ cảm tính – Dựa vào phân tích khách quan, đáng tin cậy.<br/>
+              Dự báo xu hướng thị trường, hành vi khách hàng để điều chỉnh chiến lược đúng lúc.<br/>
+              Giảm rủi ro, tăng tỷ lệ thành công trong các quyết định kinh doanh.
+            </div>
           </li>
-          <li>Nhận diện xu hướng tiêu dùng trước khi chúng trở nên phổ biến</li>
-          <li>Điều chỉnh chiến lược kinh doanh kịp thời để nắm bắt cơ hội</li>
-        </ul>
-        <h3>2.2 Quản lý tồn kho tối ưu</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
           <li>
-            Dự báo nhu cầu chính xác để tránh tình trạng thừa hoặc thiếu hàng
+            <span className="text-xl mr-2">📦</span>
+            <span className="font-semibold">Quản lý tồn kho & chuỗi cung ứng thông minh</span>
+            <div className="text-gray-700 ml-7">
+              Dự đoán chính xác nhu cầu để giảm tồn kho dư thừa hoặc thiếu hàng.<br/>
+              Tối ưu chi phí lưu kho, luân chuyển vốn hiệu quả hơn.
+            </div>
           </li>
-          <li>Giảm chi phí lưu kho và tối ưu vốn lưu động</li>
+          <li>
+            <span className="text-xl mr-2">🎯</span>
+            <span className="font-semibold">Phân khúc khách hàng & cá nhân hóa chiến lược</span>
+            <div className="text-gray-700 ml-7">
+              Xác định nhóm khách hàng giá trị cao.<br/>
+              Tùy chỉnh chiến dịch marketing, ưu đãi và sản phẩm theo từng phân khúc.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">💸</span>
+            <span className="font-semibold">Tối ưu giá bán & doanh thu</span>
+            <div className="text-gray-700 ml-7">
+              Phân tích độ nhạy cảm với giá để đề xuất mức giá tối ưu.<br/>
+              Tăng lợi nhuận mà không làm mất khách hàng.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">🔐</span>
+            <span className="font-semibold">Phát hiện gian lận & bất thường</span>
+            <div className="text-gray-700 ml-7">
+              Tự động nhận diện giao dịch bất thường, dấu hiệu rủi ro.<br/>
+              Tăng cường bảo mật và giảm tổn thất tài chính.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">🏭</span>
+            <span className="font-semibold">Tối ưu hiệu suất vận hành</span>
+            <div className="text-gray-700 ml-7">
+              Phân tích quy trình để xác định các điểm nghẽn, lãng phí.<br/>
+              Đề xuất cải tiến cụ thể dựa trên dữ liệu thực tế.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">💰</span>
+            <span className="font-semibold">Dự báo dòng tiền & quản trị tài chính</span>
+            <div className="text-gray-700 ml-7">
+              Mô hình hóa các kịch bản tài chính để chuẩn bị trước cho biến động.<br/>
+              Đảm bảo dòng tiền ổn định cho hoạt động lâu dài.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">🏁</span>
+            <span className="font-semibold">Phân tích đối thủ & cạnh tranh thị trường</span>
+            <div className="text-gray-700 ml-7">
+              Theo dõi hiệu suất, chiến lược của đối thủ cạnh tranh.<br/>
+              Phát hiện các thị trường ngách và cơ hội chưa được khai thác.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">📈</span>
+            <span className="font-semibold">Đo lường & tối ưu chiến dịch marketing</span>
+            <div className="text-gray-700 ml-7">
+              Tính toán ROI cho từng kênh, từng chiến dịch.<br/>
+              Phân bổ ngân sách thông minh để đạt hiệu quả cao nhất.
+            </div>
+          </li>
         </ul>
-        <h3>2.3 Phân khúc khách hàng hiệu quả</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Nhận diện các nhóm khách hàng có giá trị cao nhất</li>
-          <li>Điều chỉnh chiến lược marketing phù hợp với từng phân khúc</li>
-        </ul>
-        <h3>2.4 Tối ưu hóa giá bán</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Phân tích độ nhạy cảm về giá của khách hàng</li>
-          <li>Đề xuất cấu trúc giá tối ưu để tăng doanh thu và lợi nhuận</li>
-        </ul>
-        <h3>2.5 Phát hiện gian lận và bất thường</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Tự động phát hiện các giao dịch đáng ngờ</li>
-          <li>Bảo vệ doanh nghiệp khỏi các rủi ro tài chính</li>
-        </ul>
-        <h3>2.6 Tối ưu hiệu quả hoạt động</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Xác định các điểm nghẽn trong quy trình vận hành</li>
-          <li>Đề xuất giải pháp cải thiện dựa trên phân tích dữ liệu</li>
-        </ul>
-        <h3>2.7 Dự báo dòng tiền</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Mô hình hóa các kịch bản tài chính khác nhau</li>
-          <li>Chuẩn bị trước cho các thách thức về dòng tiền</li>
-        </ul>
-        <h3>2.8 Phân tích cạnh tranh</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Theo dõi và so sánh hoạt động với đối thủ</li>
-          <li>Xác định cơ hội thị trường chưa được khai thác</li>
-        </ul>
-        <h3>2.9 Đo lường hiệu quả marketing</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Phân tích ROI của các chiến dịch marketing</li>
-          <li>Phân bổ ngân sách marketing hiệu quả hơn</li>
-        </ul>{" "}
+        <p className="text-blue-900 font-bold text-lg mt-6">Từ 2.990.000₫</p>
       </div>
     ),
   },
@@ -254,87 +203,78 @@ export const products = [
       "Tự động hóa giúp tăng hiệu suất, giảm chi phí và sai sót, đồng thời cải thiện trải nghiệm và mở rộng quy mô dễ dàng.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["AI agent", "Kinh doanh"],
+    stack: ["AI agent", "Tự động hóa","Quản lý quy trình"],
     slug: "moonbeam",
     content: (
-      <div>
-        <h3>Tự động hóa công việc lặp lại</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Thay thế các tác vụ thủ công, đơn điệu và tốn thời gian</li>
+      <div className="space-y-8">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-2xl">🤖</span>
+          <span className="font-bold text-blue-900 text-lg">AI Agent – Tự động hóa quy trình doanh nghiệp</span>
+        </div>
+        <ul className="space-y-5 pl-2">
           <li>
-            Giải phóng nhân viên để tập trung vào công việc sáng tạo và giá trị
-            cao
-          </li>
-        </ul>
-        <h3>Giảm thiểu lỗi con người</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Thực hiện các quy trình với độ chính xác cao và nhất quán</li>
-          <li>Loại bỏ sai sót do mệt mỏi hoặc thiếu tập trung</li>
-        </ul>
-        <h3>Tăng tốc độ xử lý công việc</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Hoàn thành các nhiệm vụ nhanh hơn nhiều lần so với con người</li>
-          <li>Vận hành 24/7 không cần nghỉ ngơi</li>
-        </ul>
-        <h3>Tiết kiệm chi phí vận hành</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Giảm chi phí nhân sự cho các công việc giá trị thấp</li>
-          <li>Tăng năng suất mà không cần tăng nhân lực</li>
-        </ul>
-        <h3>Tích hợp các hệ thống phân mảnh</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Kết nối các phần mềm và hệ thống không tương thích</li>
-          <li>Tạo quy trình làm việc xuyên suốt giữa các nền tảng</li>
-        </ul>
-        <h3>Cải thiện trải nghiệm khách hàng</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Phản hồi nhanh chóng các yêu cầu của khách hàng</li>
-          <li>Đảm bảo dịch vụ nhất quán và chuyên nghiệp</li>
-        </ul>
-        <h3>Phân tích quy trình và tối ưu hóa</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Thu thập dữ liệu về hiệu suất quy trình</li>
-          <li>Phát hiện điểm nghẽn và đề xuất cải tiến</li>
-        </ul>
-        <h3>Mở rộng quy mô dễ dàng</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>
-            Nhân rộng quy trình tự động mà không cần tăng chi phí tuyến tính
-          </li>
-          <li>Thích ứng nhanh với tăng trưởng kinh doanh</li>
-        </ul>
-        <h3>Tuân thủ quy định và báo cáo</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Đảm bảo tuân thủ các quy trình chuẩn</li>
-          <li>Tự động tạo báo cáo và lưu trữ hồ sơ</li>
-        </ul>
-        <h3>Nâng cao khả năng ra quyết định</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>Cung cấp dữ liệu chính xác và kịp thời cho quản lý</li>
-          <li>Phân tích xu hướng và đưa ra cảnh báo sớm</li>
-        </ul>
-        <h3>Các ứng dụng phổ biến trong doanh nghiệp vừa và nhỏ</h3>
-        <ul className="product-description" style={{ listStyleType: "circle" }}>
-          <li>
-            Tự động hóa nhập liệu và xử lý dữ liệu: Chuyển thông tin từ email,
-            PDF, Excel vào hệ thống
+            <span className="text-xl mr-2">🔁</span>
+            <span className="font-semibold">Tự động hóa công việc lặp lại</span>
+            <div className="text-gray-700 ml-7">
+              Thay thế tác vụ thủ công tốn thời gian.<br/>
+              Giải phóng nhân viên cho công việc giá trị cao.<br/>
+              Vận hành 24/7, không gián đoạn.
+            </div>
           </li>
           <li>
-            Xử lý hóa đơn và thanh toán: Tự động kiểm tra, phê duyệt và thanh
-            toán hóa đơn
+            <span className="text-xl mr-2">✅</span>
+            <span className="font-semibold">Chính xác & nhất quán</span>
+            <div className="text-gray-700 ml-7">
+              Loại bỏ sai sót do con người.<br/>
+              Đảm bảo thực thi đúng quy trình.
+            </div>
           </li>
           <li>
-            Quy trình tuyển dụng: Sàng lọc hồ sơ, lên lịch phỏng vấn, gửi thông
-            báo
+            <span className="text-xl mr-2">⚡</span>
+            <span className="font-semibold">Tiết kiệm chi phí, tăng tốc độ</span>
+            <div className="text-gray-700 ml-7">
+              Tăng năng suất mà không tăng nhân lực.<br/>
+              Giảm chi phí vận hành dài hạn.
+            </div>
           </li>
           <li>
-            Quản lý đơn hàng: Từ tiếp nhận đến xử lý và theo dõi giao hàng
+            <span className="text-xl mr-2">🔗</span>
+            <span className="font-semibold">Kết nối hệ thống – Chuẩn hóa quy trình</span>
+            <div className="text-gray-700 ml-7">
+              Tích hợp phần mềm rời rạc.<br/>
+              Tạo luồng công việc xuyên suốt.
+            </div>
           </li>
           <li>
-            Báo cáo và phân tích: Tự động tạo báo cáo định kỳ và dashboard
+            <span className="text-xl mr-2">📊</span>
+            <span className="font-semibold">Phân tích & cải tiến</span>
+            <div className="text-gray-700 ml-7">
+              Theo dõi hiệu suất quy trình.<br/>
+              Phát hiện điểm nghẽn, đề xuất tối ưu.<br/>
+              Tự động hóa báo cáo & lưu trữ.
+            </div>
           </li>
-          <li>Quy trình mua hàng: Từ yêu cầu đến phê duyệt và đặt hàn</li>
-        </ul>{" "}
+          <li>
+            <span className="text-xl mr-2">🚀</span>
+            <span className="font-semibold">Linh hoạt mở rộng</span>
+            <div className="text-gray-700 ml-7">
+              Dễ nhân rộng quy trình mà không tăng chi phí tuyến tính.<br/>
+              Thích ứng nhanh với sự tăng trưởng.
+            </div>
+          </li>
+          <li>
+            <span className="text-xl mr-2">📌</span>
+            <span className="font-semibold">Ứng dụng tiêu biểu</span>
+            <div className="text-gray-700 ml-7">
+              Nhập liệu & đồng bộ dữ liệu (email, Excel, PDF).<br/>
+              Tự động hóa quy trình hóa đơn, thanh toán, mua hàng.<br/>
+              Hỗ trợ tuyển dụng: lọc CV, gửi lịch, phản hồi.<br/>
+              Tạo báo cáo định kỳ & dashboard.<br/>
+              Quản lý đơn hàng, chăm sóc khách hàng.
+            </div>
+          </li>
+        </ul>
+        <p className="text-blue-900 font-bold text-lg mt-6">Từ 2.990.000₫</p>
       </div>
     ),
   },
