@@ -15,13 +15,16 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <Container>
-      <span className="text-4xl">✉️</span>
-      <Heading className="font-black mb-2">Liên hệ với chúng tôi</Heading>
-      <Paragraph className="mb-10 max-w-xl">
-      Hãy liên hệ với chúng tôi qua email hoặc điền form liên hệ. Chúng tôi sẽ sớm phản hồi bạn{" "}
-      </Paragraph>
-      <Contact />
-    </Container>
+    <div className="bg-slate-100 min-h-screen">
+      <Container>
+        <span className="text-4xl">✉️</span>
+        <Heading className="font-black mb-2">Liên hệ với chúng tôi</Heading>
+        <Paragraph className="mb-10 max-w-xl">
+          Hãy liên hệ với chúng tôi qua email hoặc điền form liên hệ. Chúng tôi
+          sẽ sớm phản hồi bạn{" "}
+        </Paragraph>
+        <Contact />
+      </Container>
+    </div>
   );
 }

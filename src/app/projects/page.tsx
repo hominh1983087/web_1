@@ -14,14 +14,13 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <Container>
-      <span className="text-4xl">⚡</span>
-      <Heading className="font-black mb-10">
-        {" "}
-        Sản phẩm/Dịch vụ
-      </Heading>
+    <div className="bg-slate-100 min-h-screen">
+      <Container>
+        <span className="text-4xl">⚡</span>
+        <Heading className="font-black mb-10"> Sản phẩm/Dịch vụ</Heading>
 
-      <Products />
-    </Container>
+        <Products />
+      </Container>
+    </div>
   );
 }
