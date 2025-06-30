@@ -19,7 +19,7 @@ const db = mysql.createConnection({
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "123456123456",
   database: process.env.DB_NAME || "aificent",
-  port: process.env.DB_PORT || 3306,
+  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT) : 3306,
 });
 
 db.connect((err) => {
