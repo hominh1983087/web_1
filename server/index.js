@@ -5,7 +5,7 @@ const validator = require("validator");
 const xss = require("xss");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -15,10 +15,11 @@ const contacts = [];
 
 // Cấu hình kết nối MySQL
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "fuckfuck2001", // Đổi thành mật khẩu MySQL của bạn
-  database: "aificent", // Đổi thành tên database của bạn
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "root",
+  password: process.env.DB_PASSWORD || "123456123456",
+  database: process.env.DB_NAME || "aificent",
+  port: process.env.DB_PORT || 3306,
 });
 
 db.connect((err) => {

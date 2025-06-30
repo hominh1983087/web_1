@@ -50,7 +50,7 @@ Các sản phẩm chính bao gồm:
 
     ```
 6.  **Khởi động server backend:**
-    ```bash
+    ```bashnpnp
     npm run server
     ```
 
