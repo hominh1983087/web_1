@@ -75,7 +75,7 @@ export const Contact = () => {
     }
 
     try {
-      const res = await fetch("https://mysql-production-f6cb.up.railway.app/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
